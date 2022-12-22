@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@fontsource/epilogue": "^4.5.10",
+    "@fontsource/figtree": "^4.5.2",
+    "@nuxt/content": "^2.3.0",
+    "@unocss/nuxt": "^0.48.0",
+    "browserslist": "^4.21.4",
+    "lightningcss": "^1.17.1",
+    "nuxt": "3.0.0",
+    "nuxt-icons": "^3.0.0",
+    "unocss": "^0.48.0",
+    "unocss-preset-autoprefixer": "^0.0.4"
+  }
+}
