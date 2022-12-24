@@ -1,10 +1,13 @@
-
-:root{
+.design-system {
     --c-primary: hsla(38, 97%, 55%, 1);
     --c-text: hsla(235, 52%, 15%, 1);
     --f-body: FigtreeVariable, ui-sans-serif, system-ui;
     --f-display: EpilogueVariable, ui-sans-serif, system-ui;
+    /* 13px */
+    --flow-space: 0.8125rem;
+
 }
+
 html {
     font-family: var(--f-body);
     color: var(--c-text)

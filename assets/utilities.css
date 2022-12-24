@@ -1,0 +1,33 @@
+
+.flow>*+* {
+    margin-top: var(--flow-space, 1em);
+}
+
+.shadowed {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.shadowed:before {
+    --shadowed-stroke-width: 1px;
+    content: attr(data-shadowed-text);
+    position: absolute;
+    color: var(--c-primary);
+    z-index: 0;
+    /* I wish I could use text stroke here, but depending on the font
+       you can get some weird outlines. Text shadow just works better for my fonts */
+    /* -webkit-text-stroke: 2px var(--c-text); */
+    top: var(--shadowed-text-offset, -4px);
+    left: var(--shadowed-text-offset, -4px);
+    /* this text-shadow acts as an outside outline of the text */
+    text-shadow:
+        calc(var(--shadowed-stroke-width) * -1) calc(var(--shadowed-stroke-width) * -1) var(--c-text),
+        0 calc(var(--shadowed-stroke-width) * -1) var(--c-text),
+        var(--shadowed-stroke-width) calc(var(--shadowed-stroke-width) * -1) var(--c-text),
+        var(--shadowed-stroke-width) 0 var(--c-text),
+        var(--shadowed-stroke-width) var(--shadowed-stroke-width) var(--c-text),
+        0 var(--shadowed-stroke-width) var(--c-text),
+        calc(var(--shadowed-stroke-width) * -1) var(--shadowed-stroke-width) var(--c-text),
+        calc(var(--shadowed-stroke-width) * -1) 0 var(--c-text);
+}

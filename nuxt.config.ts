@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@fontsource/figtree/variable.css",
     "@fontsource/epilogue/variable.css",
     "@/assets/global.css",
+    '@/assets/utilities.css'
   ],
   modules: ["@nuxt/content", "@unocss/nuxt", "nuxt-icons"],
   content: {},

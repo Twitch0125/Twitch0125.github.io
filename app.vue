@@ -1,12 +1,17 @@
 <template>
-  <div class="layout">
-    <div class="accented title">
-      Kaleb Ercanbrack
+  <div class="design-system | flow | container">
+    <div class="title">
+      <div data-shadowed-text="Kaleb Ercanbrack" class="shadowed mt-[6px] | title-header">
+        Kaleb Ercanbrack
+      </div>
+      <div class="title-subheader">
+        UI Designer / Software Engineer / ☕️
+      </div>
     </div>
-    <nav>
-      <span class="text-2xl">
-        Yo
-      </span>
+    <nav class="flex-row">
+      <NuxtLink class="btn" to="/resume">Resume</NuxtLink>
+      <NuxtLink class="btn" to="/portfolio">Portfolio</NuxtLink>
+      <NuxtLink class="btn" to="/speaking">Speaking</NuxtLink>
     </nav>
     <article class="prose">
       <NuxtPage />
@@ -17,31 +22,58 @@
 <style>
 article {
   --un-prose-body: var(--c-text);
-  --un-prose-headings: var(--c-primary);
+  --un-prose-headings: var(--c-text);
 }
 
-.layout {
-  --at-apply: space-y-4 m-4;
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--flow-space)
 }
 
-.title {
-  font-size: 6em;
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 30px;
+  gap: 8px;
+  background-color: #fff;
+  border: 1px solid var(--c-text);
+  font-family: var(--f-body);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 19px;
+}
+
+.btn:active,
+.btn.router-link-active {
+  background-color: var(--c-primary);
+  border: 1px solid var(--c-text);
+  margin-top: -8px;
+  box-shadow: 4px 4px 0px var(--c-text);
+}
+
+.container {
+  margin: 50px 5px;
+}
+
+.title-header {
+  font-size: 56px;
   font-weight: 900;
   font-family: var(--f-display);
   line-height: 90.1%;
   text-transform: uppercase;
   letter-spacing: -0.06em;
+  color: var(--c-text);
 }
 
-.accented {
-  --stroke-width: 1px;
-  color: var(--c-primary);
-  -webkit-text-stroke: 1px var(--c-text);
-  /* -webkit-text-fill-color: transparent; */
-  text-shadow: 2px 2px var(--c-text);
-  /* text-shadow: var(--stroke-width) 0px var(--c-text),
-    calc(var(--stroke-width) * -1) 0px var(--c-text),
-    0px var(--stroke-width) var(--c-text),
-    0px calc(var(--stroke-width) * -1) var(--c-text); */
+.title-subheader {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  font-style: italic;
+  font-family: var(--f-display);
+  text-transform: uppercase;
 }
 </style>
