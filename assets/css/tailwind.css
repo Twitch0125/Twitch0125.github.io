@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --flow-space: theme(spacing.1);
+  }
+}
+
+@layer components {
+  .blurb {
+    @apply font-body text-2xl;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+  }
+  .flow {
+    @apply space-y-3;
+  }
+  .container {
+    @apply px-[0.3125rem] py-[3.125rem];
+  }
+
+  .btn {
+    @apply bg-background border border-body font-bold flex items-center justify-center px-[1.625rem] py-3 gap-2  transition-all duration-75 ease-in-out;
+    letter-spacing: -0.03em;
+    line-height: 19px;
+    &:focus {
+      @apply shadow-sm;
+    }
+    &:active {
+      @apply bg-primary shadow-sm outline-none;
+    }
+
+    &.router-link-active {
+      @apply bg-primary shadow -mt-2 outline-none;
+    }
+  }
+
+  .shadowed {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+  .shadowed:before {
+    --shadowed-stroke-width: 1px;
+    content: attr(data-shadowed-text);
+    position: absolute;
+    color: theme(colors.primary);
+    z-index: 0;
+    /* I wish I could use text stroke here, but depending on the font
+     you can get some weird outlines. Text shadow just works better for my fonts */
+    /* -webkit-text-stroke: 2px var(--c-text); */
+    top: var(--shadowed-text-offset, -4px);
+    left: var(--shadowed-text-offset, -4px);
+    /* this text-shadow acts as an outside outline of the text */
+    text-shadow: calc(var(--shadowed-stroke-width) * -1)
+        calc(var(--shadowed-stroke-width) * -1) theme(colors.body),
+      0 calc(var(--shadowed-stroke-width) * -1) theme(colors.body),
+      var(--shadowed-stroke-width) calc(var(--shadowed-stroke-width) * -1)
+        theme(colors.body),
+      var(--shadowed-stroke-width) 0 theme(colors.body),
+      var(--shadowed-stroke-width) var(--shadowed-stroke-width)
+        theme(colors.body),
+      0 var(--shadowed-stroke-width) theme(colors.body),
+      calc(var(--shadowed-stroke-width) * -1) var(--shadowed-stroke-width)
+        theme(colors.body),
+      calc(var(--shadowed-stroke-width) * -1) 0 theme(colors.body);
+  }
+}
+
+b {
+  font-weight: 600;
+}
+html {
+  @apply font-body text-body;
+}
