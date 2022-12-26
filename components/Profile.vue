@@ -1,18 +1,37 @@
 <template>
     <div class="profile">
-        <NuxtImg class="profile-img" src="/images/profile.jpg" format="webp" :modifiers="{position: 'cover'}" width="117px" height="117px"
-            alt="Picture of Kaleb Ercanbrack" />
+        <NuxtImg class="profile-img" src="/images/profile.jpg" format="webp"
+            :modifiers="{ fit: 'cover', position: 'centre' }" alt="Kaleb Ercanbrack" />
         <div class="profile-square"></div>
         <div class="profile-square"></div>
+        <div class="profile-label">
+            That's me!
+        </div>
     </div>
 </template>
 <style lang="postcss">
 .profile {
-    --profile-size: 117px;
-    --profile-border: 1px solid theme(colors.body);
-    width: 150px;
-    height: 140px;
+    --profile-size: 140px;
+    width: 162px;
+    height: 152px;
     position: relative;
+
+    &-label {
+        /* width: theme(width.16); */
+        /* height: theme(height.4); */
+        font-size: theme(fontSize.lg.0);
+        background-color: theme(colors.primary);
+        letter-spacing: theme(letterSpacing.tighter);
+        line-height: theme(lineHeight.tight);
+        position: absolute;
+        bottom: 0;
+        right: calc(-1 * theme(spacing.5));
+        z-index: 3;
+        font-weight: theme(fontWeight.bold);
+        border: var(--base-border);
+        padding: 0 theme(padding.1);
+        transform: rotate(-20deg);
+    }
 
     &-img {
         z-index: 3;
@@ -20,13 +39,14 @@
         top: 0;
         left: 0;
         object-fit: cover;
+        object-position: 100% 13%;
     }
 
     &-img,
     &-square {
         width: var(--profile-size);
         height: var(--profile-size);
-        border: var(--profile-border);
+        border: var(--base-border);
         background: #fff;
     }
 

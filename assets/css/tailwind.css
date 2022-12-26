@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --flow-space: theme(spacing.3);
+    --base-border: 1px solid theme(colors.body);
   }
 }
 
@@ -12,20 +13,27 @@
   .blurb {
     font-size: theme(fontSize.2xl);
     font-family: theme(fontFamily.body);
-    line-height: 28px;
-    letter-spacing: -0.04em;
+    line-height: theme(lineHeight.7);
+    letter-spacing: theme(letterSpacing.tighter);
   }
   .flow {
     @apply space-y-[var(--flow-space)];
   }
-  .container {
-    padding: theme(spacing.1);
+  .layout {
+    padding: 0 min(theme(spacing.1), theme(spacing.4));
+    height: 100vh;
+    border: var(--base-border);
+    @media screen(sm) {
+      padding: 0 theme(spacing.6)
+    }
+    @media screen(lg) {
+    }
   }
 
   .btn {
     @apply bg-background border border-body font-bold flex items-center justify-center px-7 py-3 gap-2  transition-all duration-75 ease-in-out;
-    letter-spacing: -0.03em;
-    line-height: 19px;
+    letter-spacing: theme(letterSpacing.tight);
+    line-height: theme(lineHeight.tight);
     &:focus {
       @apply shadow-sm;
     }
@@ -33,7 +41,8 @@
       @apply bg-primary shadow-sm outline-none;
     }
 
-    &.router-link-active {
+    &.router-link-active,
+    &-primary {
       @apply bg-primary shadow -mt-2 outline-none;
     }
   }
@@ -70,7 +79,12 @@
       calc(var(--shadowed-stroke-width) * -1) 0 theme(colors.body);
   }
 }
-
+#__nuxt {
+  @media screen(sm) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
 b {
   font-weight: 600;
 }

@@ -5,13 +5,13 @@
             UI/UX
             Design
         </p>
-        <Profile class="mx-auto" />
+        <Profile class="mx-auto " />
         <a class="btn btn-primary" href="mailto:kaleb.ercanbrack@hey.com"> Email Me </a>
     </div>
 </template>
 
 <style lang="postcss">
 .index.flow {
-    --flow-space: theme(spacing.8);
+    --flow-space: theme(spacing.9);
 }
 </style>
