@@ -8,10 +8,11 @@ const mailtoUrl = computed(() => `mailto:kaleb.ercanbrack@hey.com?subject=Someth
 </script>
 <template>
     <main>
-        <ContentDoc>
+        <ContentDoc class="prose">
             <template #not-found>
                 <p class="blurb" style="font-family: monospace">
-                    Aw nuts! Something wasn't found or went wrong. <a class="underline text-primary font-black" :href="mailtoUrl">Let me
+                    Aw nuts! Something wasn't found or went wrong. <a class="underline text-primary font-black"
+                        :href="mailtoUrl">Let me
                         know.</a>
                 </p>
             </template>

@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     "@fontsource/epilogue/variable.css",
     "~/assets/css/tailwind.css",
   ],
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", '@nuxt/image-edge'],
   content: {},
   postcss: {
     plugins: {

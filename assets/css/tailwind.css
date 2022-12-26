@@ -4,25 +4,26 @@
 
 @layer base {
   :root {
-    --flow-space: theme(spacing.1);
+    --flow-space: theme(spacing.3);
   }
 }
 
 @layer components {
   .blurb {
-    @apply font-body text-2xl;
+    font-size: theme(fontSize.2xl);
+    font-family: theme(fontFamily.body);
     line-height: 28px;
     letter-spacing: -0.04em;
   }
   .flow {
-    @apply space-y-3;
+    @apply space-y-[var(--flow-space)];
   }
   .container {
-    @apply px-[0.3125rem] py-[3.125rem];
+    padding: theme(spacing.1);
   }
 
   .btn {
-    @apply bg-background border border-body font-bold flex items-center justify-center px-[1.625rem] py-3 gap-2  transition-all duration-75 ease-in-out;
+    @apply bg-background border border-body font-bold flex items-center justify-center px-7 py-3 gap-2  transition-all duration-75 ease-in-out;
     letter-spacing: -0.03em;
     line-height: 19px;
     &:focus {
