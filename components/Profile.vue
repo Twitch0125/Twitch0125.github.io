@@ -1,7 +1,7 @@
 <template>
   <div class="profile">
     <NuxtImg
-      class="profile-img" src="/images/profile.jpg" format="webp"
+      class="profile-img" src="/images/profile.jpg"
       :modifiers="{ fit: 'cover', position: 'centre' }" alt="Kaleb Ercanbrack"
     />
     <div class="profile-square" />
