@@ -16,34 +16,44 @@
     line-height: theme(lineHeight.7);
     letter-spacing: theme(letterSpacing.tighter);
   }
+
   .flow {
     @apply space-y-[var(--flow-space)];
   }
+
   .layout {
     padding: 0 min(theme(spacing.1), theme(spacing.4));
     height: 100vh;
     border: var(--base-border);
+
     @media screen(sm) {
       padding: 0 theme(spacing.6)
     }
-    @media screen(lg) {
-    }
+
+    @media screen(lg) {}
   }
 
   .btn {
-    @apply bg-background border border-body font-bold flex items-center justify-center px-7 py-3 gap-2  transition-all duration-75 ease-in-out;
+    @apply bg-background border border-body justify-center gap-2 transition-all duration-75 ease-in-out;
+    display: flex;
+    align-items: center;
+    font-weight: theme(fontWeight.bold);
     letter-spacing: theme(letterSpacing.tight);
     line-height: theme(lineHeight.tight);
-    &:focus {
-      @apply shadow-sm;
-    }
-    &:active {
-      @apply bg-primary shadow-sm outline-none;
+    padding: theme(spacing.3) theme(spacing.7);
+    font-size: theme(fontSize.base);
+
+    &-sm {
+      padding: theme(spacing.2) theme(spacing.5);
+      font-size: theme(fontSize.sm);
     }
 
-    &.router-link-active,
+    &:active {
+      @apply bg-primary outline-none;
+    }
+
     &-primary {
-      @apply bg-primary shadow -mt-2 outline-none;
+      @apply bg-primary shadow outline-none;
     }
   }
 
@@ -65,29 +75,28 @@
     top: var(--shadowed-text-offset, -4px);
     left: var(--shadowed-text-offset, -4px);
     /* this text-shadow acts as an outside outline of the text */
-    text-shadow: calc(var(--shadowed-stroke-width) * -1)
-        calc(var(--shadowed-stroke-width) * -1) theme(colors.body),
+    text-shadow: calc(var(--shadowed-stroke-width) * -1) calc(var(--shadowed-stroke-width) * -1) theme(colors.body),
       0 calc(var(--shadowed-stroke-width) * -1) theme(colors.body),
-      var(--shadowed-stroke-width) calc(var(--shadowed-stroke-width) * -1)
-        theme(colors.body),
+      var(--shadowed-stroke-width) calc(var(--shadowed-stroke-width) * -1) theme(colors.body),
       var(--shadowed-stroke-width) 0 theme(colors.body),
-      var(--shadowed-stroke-width) var(--shadowed-stroke-width)
-        theme(colors.body),
+      var(--shadowed-stroke-width) var(--shadowed-stroke-width) theme(colors.body),
       0 var(--shadowed-stroke-width) theme(colors.body),
-      calc(var(--shadowed-stroke-width) * -1) var(--shadowed-stroke-width)
-        theme(colors.body),
+      calc(var(--shadowed-stroke-width) * -1) var(--shadowed-stroke-width) theme(colors.body),
       calc(var(--shadowed-stroke-width) * -1) 0 theme(colors.body);
   }
 }
+
 #__nuxt {
   @media screen(sm) {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
   }
 }
+
 b {
   font-weight: 600;
 }
+
 html {
   @apply font-body text-body;
 }

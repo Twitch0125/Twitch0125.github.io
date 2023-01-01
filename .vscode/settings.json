@@ -5,4 +5,9 @@
     "files.associations": {
         "*.css": "postcss"
     },
+    "prettier.enable": false,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
 }

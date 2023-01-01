@@ -13,8 +13,12 @@
 .title {
     --flow-space: theme(spacing.1);
     &-header {
+        @media screen(sm){
+            font-size: theme(fontSize.6xl.0)
+        }
         @apply font-black font-display text-body;
-        font-size: theme(fontSize.6xl.0);
+        width: 0; /* this is to make sure our text is always wrapped */
+        font-size: theme(fontSize.5xl.0);
         line-height: 90.1%;
         text-transform: uppercase;
         letter-spacing: -0.06em;
