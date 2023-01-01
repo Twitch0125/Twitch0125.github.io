@@ -1,14 +1,17 @@
 <template>
-    <div class="profile">
-        <NuxtImg class="profile-img" src="/images/profile.jpg" format="webp"
-            :modifiers="{ fit: 'cover', position: 'centre' }" alt="Kaleb Ercanbrack" />
-        <div class="profile-square"></div>
-        <div class="profile-square"></div>
-        <div class="profile-label">
-            That's me!
-        </div>
+  <div class="profile">
+    <NuxtImg
+      class="profile-img" src="/images/profile.jpg" format="webp"
+      :modifiers="{ fit: 'cover', position: 'centre' }" alt="Kaleb Ercanbrack"
+    />
+    <div class="profile-square" />
+    <div class="profile-square" />
+    <div class="profile-label">
+      That's me!
     </div>
+  </div>
 </template>
+
 <style lang="postcss">
 .profile {
     --profile-size: 140px;

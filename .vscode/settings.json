@@ -1,13 +1,13 @@
 {
-    "[vue]": {
-        "editor.defaultFormatter": "Vue.volar",
-    },
-    "files.associations": {
-        "*.css": "postcss"
-    },
-    "prettier.enable": false,
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    }
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

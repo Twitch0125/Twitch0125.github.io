@@ -1,12 +1,12 @@
 <template>
-    <div class="flow title">
-        <NuxtLink to="/" data-shadowed-text="Kaleb Ercanbrack" class="title-header | shadowed block mt-[6px] ">
-            Kaleb Ercanbrack
-        </NuxtLink>
-        <div class="title-subheader">
-            UI Designer / Software Engineer / ☕️
-        </div>
+  <div class="flow title">
+    <NuxtLink to="/" data-shadowed-text="Kaleb Ercanbrack" class="title-header | shadowed block mt-[6px] ">
+      Kaleb Ercanbrack
+    </NuxtLink>
+    <div class="title-subheader">
+      UI Designer / Software Engineer / ☕️
     </div>
+  </div>
 </template>
 
 <style lang="postcss">

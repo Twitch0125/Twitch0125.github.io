@@ -1,20 +1,27 @@
 <script setup>
 const activeClass = 'btn-primary router-link-active'
 </script>
+
 <template>
-    <nav class="nav">
-        <ul class="nav-btns">
-            <li>
-                <NuxtLink :active-class="activeClass" tabindex="0" class="btn btn-nav" to="/resume">Resume</NuxtLink>
-            </li>
-            <li>
-                <NuxtLink :active-class="activeClass" class="btn btn-nav" to="/portfolio">Portfolio</NuxtLink>
-            </li>
-            <li>
-                <NuxtLink :active-class="activeClass" class="btn btn-nav" to="/speaking">Speaking</NuxtLink>
-            </li>
-        </ul>
-    </nav>
+  <nav class="nav">
+    <ul class="nav-btns">
+      <li>
+        <NuxtLink :active-class="activeClass" tabindex="0" class="btn btn-nav" to="/resume">
+          Resume
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink :active-class="activeClass" class="btn btn-nav" to="/portfolio">
+          Portfolio
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink :active-class="activeClass" class="btn btn-nav" to="/speaking">
+          Speaking
+        </NuxtLink>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style lang="postcss">
