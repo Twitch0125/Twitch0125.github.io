@@ -30,8 +30,6 @@ const activeClass = 'btn-primary router-link-active'
     margin-right: theme(spacing.1);
 }
 
-.nav {}
-
 .nav-btns {
     li {
         min-width: 0;
