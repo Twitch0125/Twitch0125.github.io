@@ -2,7 +2,10 @@
   <div class="profile">
     <NuxtImg
       class="profile-img" src="/images/profile.jpg"
-      :modifiers="{ fit: 'cover', position: 'centre' }" alt="Kaleb Ercanbrack"
+      fit="cover"
+      :modifiers="{ position: 'top' }" alt="Kaleb Ercanbrack"
+      width="280"
+      height="280"
     />
     <div class="profile-square" />
     <div class="profile-square" />
@@ -41,8 +44,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        object-fit: cover;
-        object-position: 100% 13%;
     }
 
     &-img,
