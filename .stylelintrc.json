@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "stylelint-config-recommended",
-    "stylelint-config-recommended-vue",
-    "stylelint-config-tailwindcss"
-  ],
-  "ignoreFiles": ["**/*.md", "**/*.json", "**/*.jpg", "**/*.yaml", "**/*.js"],
-  "customSyntax": "postcss-html"
-}
