@@ -1,5 +1,5 @@
 <template>
-  <Html class="font-body text-body [--flow-space:0.75rem]" />
+  <Html lang="en" class="font-body text-body [--flow-space:0.75rem]" />
   <div
     class="sm:(grid grid-cols-[1fr_2fr_1fr])"
   >
@@ -7,7 +7,7 @@
       <HeroText />
       <MainNav />
       <NuxtPage />
-      <NuxtImg class="absolute -z-1 top-0 opacity-33" format="webp" src="/images/random.png" />
+      <NuxtImg alt="" class="absolute -z-1 top-0 opacity-33" format="webp" src="/images/random.png" />
     </div>
   </div>
 </template>
