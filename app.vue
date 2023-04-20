@@ -1,6 +1,12 @@
 <template>
-  <div class="design-system | layout col-start-2">
-    <div class="flow landing-page">
+  <Html class="font-body text-body [--flow-space:0.75rem]" />
+  <div
+    class="
+    py-0 px-[min(0.25rem,1rem)] sm:px-6 h-screen border-base
+    col-start-2
+    "
+  >
+    <div class="space-y-flow flow-3">
       <HeroText />
       <MainNav />
       <NuxtPage />

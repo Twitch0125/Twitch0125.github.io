@@ -3,18 +3,10 @@ export default defineNuxtConfig({
   css: [
     '@fontsource/figtree/variable.css',
     '@fontsource/epilogue/variable.css',
-    '~/assets/css/tailwind.css',
   ],
-  modules: ['@nuxt/content', '@nuxt/image-edge'],
+  modules: ['@nuxt/content', '@nuxt/image-edge', '@unocss/nuxt'],
   content: {},
-  postcss: {
-    plugins: {
-      'tailwindcss/nesting': {},
-      'tailwindcss': {},
-      'autoprefixer': {},
-    },
-  },
   experimental: {
-    componentIslands: true
-  }
+    componentIslands: true,
+  },
 })
