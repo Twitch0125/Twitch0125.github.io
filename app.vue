@@ -3,10 +3,11 @@
   <div
     class="sm:(grid grid-cols-[1fr_2fr_1fr])"
   >
-    <div class="flex flex-col flow-9 gap-flow pt-7 col-start-2 px-[min(0.25rem,1rem)] sm:px-6 h-screen border-base">
+    <div class="flex flex-col flow-9 gap-flow pt-7 col-start-2 px-[min(0.25rem,1rem)] sm:px-6 min-h-screen border-base">
       <HeroText />
       <MainNav />
       <NuxtPage />
+      <NuxtImg class="absolute -z-1 top-0 opacity-33" format="webp" src="/images/random.png" />
     </div>
   </div>
 </template>

@@ -12,7 +12,7 @@ const activeClass = 'btn-primary router-link-active'
       </li>
       <li>
         <NuxtLink :active-class="activeClass" class="btn [&.router-link-active]:(-mt-1 mr-1) flex-grow flex-shrink flex-basis-[118px]" to="/portfolio">
-          Portfolio
+          Thoughts
         </NuxtLink>
       </li>
       <li>

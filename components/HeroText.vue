@@ -2,7 +2,7 @@
   <div class="space-y-flow flow-1">
     <NuxtLink
       to="/" data-shadowed-text="Kaleb Ercanbrack"
-      class="decoration-none font-display w-0 text-5xl font-black leading-[90.1%] uppercase -tracking-[0.06em] | shadowed shadowed-outline block mt-[6px] "
+      class="decoration-none font-display w-0 text-5xl font-black leading-[90.1%] uppercase -tracking-[0.06em] | shadowed block mt-[6px] "
     >
       Kaleb Ercanbrack
     </NuxtLink>
@@ -13,14 +13,5 @@
 </template>
 
 <style>
-.shadowed-outline {
-  text-shadow: -1px -1px hsla(235,52%,15%),
-      0 -1px hsla(235,52%,15%),
-      1px -1px hsla(235,52%,15%),
-      1px 0 hsla(235,52%,15%),
-      1px 1px hsla(235,52%,15%),
-      0 1px hsla(235,52%,15%),
-      -1px 1px hsla(235,52%,15%),
-      -1px 0 hsla(235,52%,15%);
-}
+
 </style>
