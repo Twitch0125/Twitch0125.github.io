@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col flow-9 gap-flow">
     <p class="blurb">
-      I'm a frontend engineer with 3 years of experience and a <b class="font-bold">passion</b> for excellent
+      I'm a frontend engineer with 3.5-ish years of experience and a <b class="font-bold">passion</b> for excellent
       UI/UX
       Design
     </p>
