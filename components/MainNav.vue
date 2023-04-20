@@ -6,7 +6,7 @@ const activeClass = 'btn-primary router-link-active'
   <nav>
     <ul class="flex gap-1 [&>li]:(min-w-[0] flex-auto)">
       <li>
-        <NuxtLink :active-class="activeClass" tabindex="0" class="btn [&.router-link-active]:(-mt-1 mr-1) flex-grow flex-shrink flex-basis-[118px]" to="/resume">
+        <NuxtLink :active-class="activeClass" tabindex="0" class="btn [&.router-link-active]:(-mt-1 mr-1) flex-grow flex-shrink flex-basis-[118px]" to="/">
           Resume
         </NuxtLink>
       </li>
