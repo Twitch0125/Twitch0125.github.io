@@ -7,7 +7,7 @@ const mailtoUrl = computed(() => `mailto:kaleb.ercanbrack@hey.com?subject=Someth
 </script>
 
 <template>
-  <ContentDoc tag="main" class="prose">
+  <ContentDoc tag="article" class="prose">
     <template #not-found>
       <p class="blurb" style="font-family: monospace">
         Aw nuts! Something wasn't found or went wrong. <a
@@ -19,3 +19,9 @@ const mailtoUrl = computed(() => `mailto:kaleb.ercanbrack@hey.com?subject=Someth
     </template>
   </ContentDoc>
 </template>
+
+<style>
+.prose :is(h1,h2,h3,h4,h5)>a{
+  text-decoration: none;
+}
+</style>

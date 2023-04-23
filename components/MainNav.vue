@@ -1,23 +1,22 @@
 <script setup>
-const activeClass = 'btn-primary router-link-active'
+const links = [{
+  to: '/',
+  text: 'Resume',
+}, {
+  to: '/blog',
+  text: 'Blog',
+}, {
+  to: '/speaking',
+  text: 'Speaking',
+}]
 </script>
 
 <template>
   <nav>
-    <ul class="flex gap-1 [&>li]:(min-w-[0] flex-auto)">
-      <li>
-        <NuxtLink :active-class="activeClass" tabindex="0" class="btn [&.router-link-active]:(-mt-1 mr-1) flex-grow flex-shrink flex-basis-[118px]" to="/">
-          Resume
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink :active-class="activeClass" class="btn [&.router-link-active]:(-mt-1 mr-1) flex-grow flex-shrink flex-basis-[118px]" to="/portfolio">
-          Thoughts
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink :active-class="activeClass" class="btn [&.router-link-active]:(-mt-1 mr-1) flex-grow flex-shrink flex-basis-[118px]" to="/speaking">
-          Speaking
+    <ul class="flow-1 sm:flow-xs flex gap-flow [&>li]:(min-w-[0] flex-auto)">
+      <li v-for="link in links" :key="link.to">
+        <NuxtLink tabindex="0" class="btn flex-grow flex-shrink flex-basis-[118px] [&.router-link-active]:(-mt-1 mr-1 btn-primary)" :to="link.to">
+          {{ link.text }}
         </NuxtLink>
       </li>
     </ul>

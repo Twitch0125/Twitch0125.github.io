@@ -10,7 +10,10 @@ const colors = {
 
 export default defineConfig({
   // ...UnoCSS options
-  presets: [presetWind(), presetTypography()],
+  presets: [presetWind(), presetTypography({
+    cssExtend: {
+    },
+  })],
   transformers: [transformerVariantGroup()],
   rules: [
     ['shadowed-outline', {
@@ -45,18 +48,37 @@ export default defineConfig({
   },
   shortcuts: [
     {
-      'blurb': 'text-2xl font-body leading-7 tracking-tighter',
+      'blurb': 'text-2xl font-body leading-tight tracking-tight',
       'space-y-flow': 'space-y-[var(--flow-space)]',
       'space-x-flow': 'space-x-[var(--flow-space)]',
+      'vertical-flow': '[&>*~*]:mt-flow',
+      'vertical-flow-deep': '[&_*~*]:mt-flow',
       'gap-flow': 'gap-[var(--flow-space)]',
       'btn': 'bg-background border border-body justify-center gap-2 transition-all duration-75 ease-in-out flex items-center font-bold tracking-tight leading-tight py-3 px-7 text-base active:(bg-primary outline-none)',
       'btn-primary': 'bg-primary shadow outline-none',
       'special-shadow': '',
       'shadowed': 'shadowed-outline bg-transparent relative z-[1] [&:before]:(z-[1] absolute content-[attr(data-shadowed-text)] text-primary -top-[4px] -left-[4px])',
       'border-base': 'border border-solid border-body',
+      'p-flow': 'p-[var(--flow-space)]',
+      'pt-flow': 'pt-[var(--flow-space)]',
+      'pr-flow': 'pr-[var(--flow-space)]',
+      'pl-flow': 'pl-[var(--flow-space)]',
+      'pb-flow': 'pb-[var(--flow-space)]',
+      'm-flow': 'm-[var(--flow-space)]',
+      'mt-flow': 'mt-[var(--flow-space)]',
+      'mr-flow': 'mr-[var(--flow-space)]',
+      'ml-flow': 'ml-[var(--flow-space)]',
+      'mb-flow': 'mb-[var(--flow-space)]',
+      'ms-flow': 'ms-[var(--flow-space)]',
+      'me-flow': 'me-[var(--flow-space)]',
+      'flow-xs': '[--flow-space:0.75rem]',
+      'flow-sm': '[--flow-space:0.875rem]',
+      'flow-base': '[--flow-space:1rem]',
+      'flow-lg': '[--flow-space:1.125rem]',
+      'flow-xl': '[--flow-space:1.25rem]',
     },
     [
-      /^flow-(.*)$/, ([, space]) => `[--flow-space:${parseInt(space) * 0.25}rem]`,
+      /^flow-([0-9]*)$/, ([, space]) => `[--flow-space:${parseInt(space) * 0.25}rem]`,
     ],
   ],
 })
