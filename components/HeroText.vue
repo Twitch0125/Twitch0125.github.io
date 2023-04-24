@@ -11,7 +11,7 @@
         UI Designer / Software Engineer / <span class="not-italic text-base">☕️</span>
       </div>
       <div class="sm:flex-grow" />
-      <div class="flex text-xl gap-2">
+      <div class="flex text-xl gap-3 sm:gap-2">
         <a title="github" href="https://github.com/Twitch0125" class="w-6 h-6 i-tabler-brand-github" />
         <a title="twitter" href="https://twitter.com/ErcanbrackKaleb" class="w-6 h-6 i-tabler-brand-twitter" />
         <a title="linkedin" href="https://www.linkedin.com/in/kaleb-e/" class="w-6 h-6 i-tabler-brand-linkedin" />
