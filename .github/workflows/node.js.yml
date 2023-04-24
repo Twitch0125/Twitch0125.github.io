@@ -44,5 +44,16 @@ jobs:
         uses: actions/upload-pages-artifact@v1.0.8
         with:
           path: .output/public
-      - name: Deploy Github Pages artifact
-        uses: actions/deploy-pages@v2.0.1
+  deploy:
+    needs: cache-and-install
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
