@@ -1,4 +1,5 @@
 ---
+title: How to prefer a PPA package over a distro's package
 description: Often times on Ubuntu based distros you need a newer package than what ubuntu provides. Sometimes the distro will override the PPA because it has its own version of a package that it really want you to use.
 created: 04/23/2023
 ---

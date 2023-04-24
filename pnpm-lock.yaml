@@ -7,9 +7,9 @@ devDependencies:
   '@fontsource/epilogue':
     specifier: ^4.5.11
     version: 4.5.11
-  '@fontsource/figtree':
-    specifier: ^4.5.3
-    version: 4.5.3
+  '@iconify-json/tabler':
+    specifier: ^1.1.74
+    version: 1.1.74
   '@nuxt/content':
     specifier: ^2.6.0
     version: 2.6.0
@@ -705,10 +705,6 @@ packages:
     resolution: {integrity: sha512-2L54zvaeYRxBK0yKCjEVcp37sBeDKkDJ2NgaX6+TGMJP1CcsMIz7K1xc3fpqqRFQV/4r0XY/RaiY6vbjHLF/5g==}
     dev: true
 
-  /@fontsource/figtree@4.5.3:
-    resolution: {integrity: sha512-e/8bpoOhWfYq6hk5RNUHwBAjTXTCA13+caQOhImzD8TN6RG0VdpqMavKQiH350WBBBjwOJdBrCZZdpHHRONobQ==}
-    dev: true
-
   /@humanwhocodes/config-array@0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
     engines: {node: '>=10.10.0'}
@@ -727,6 +723,12 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/tabler@1.1.74:
+    resolution: {integrity: sha512-dDlEXoTrSBH5+mV2IT/BUKisvxletRIW43aHs6cL4uCZSfk8HTNtXohbbxzEOdbw+wS+9JPGVIM9j8BLTpXWug==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types@2.0.0:

@@ -1,5 +1,5 @@
 // uno.config.ts
-import { defineConfig, presetTypography, presetWind } from 'unocss'
+import { defineConfig, presetIcons, presetTypography, presetWind } from 'unocss'
 import transformerVariantGroup from '@unocss/transformer-variant-group'
 
 const colors = {
@@ -10,7 +10,7 @@ const colors = {
 
 export default defineConfig({
   // ...UnoCSS options
-  presets: [presetWind(), presetTypography({
+  presets: [presetWind(), presetIcons(), presetTypography({
     cssExtend: {
     },
   })],
@@ -77,6 +77,7 @@ export default defineConfig({
       'flow-lg': '[--flow-space:1.125rem]',
       'flow-xl': '[--flow-space:1.25rem]',
       'divider': 'h-1px bg-body -mx-4 sm:-mx-6',
+      'date': 'text-body/70 text-sm font-mono',
     },
     [
       /^flow-([0-9]*)$/, ([, space]) => `[--flow-space:${parseInt(space) * 0.25}rem]`,
