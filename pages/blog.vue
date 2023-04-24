@@ -15,11 +15,14 @@ const blogs = await queryContent('/blog').find()
             {{ blog.title }}
           </nuxt-link>
         </h2>
+        <span class="font-mono text-body/70 text-sm">
+          {{ blog.created }}
+        </span>
         <p>
           {{ blog.description }}
         </p>
       </div>
-      <div class="h-1px bg-body -mx-[min(0.25rem,1rem)] sm:-mx-6" />
+      <Divider />
     </article>
   </section>
 </template>

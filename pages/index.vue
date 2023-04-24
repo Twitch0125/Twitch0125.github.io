@@ -7,7 +7,7 @@
     </p>
     <Profile class="mx-auto" />
     <a class="btn btn-primary mr-1 sm:mr-0" href="mailto:kaleb.ercanbrack@hey.com"> Email Me </a>
-    <div class="h-1px bg-body -mx-[min(0.25rem,1rem)] sm:-mx-6" />
+    <Divider />
     <ContentDoc tag="main" path="/resume" class="prose -mt-5" />
   </div>
 </template>

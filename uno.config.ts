@@ -29,7 +29,7 @@ export default defineConfig({
   ],
   theme: {
     fontFamily: {
-      body: 'FigtreeVariable',
+      body: 'EpilogueVariable',
       display: 'EpilogueVariable',
     },
     boxShadow: {
@@ -76,6 +76,7 @@ export default defineConfig({
       'flow-base': '[--flow-space:1rem]',
       'flow-lg': '[--flow-space:1.125rem]',
       'flow-xl': '[--flow-space:1.25rem]',
+      'divider': 'h-1px bg-body -mx-4 sm:-mx-6',
     },
     [
       /^flow-([0-9]*)$/, ([, space]) => `[--flow-space:${parseInt(space) * 0.25}rem]`,

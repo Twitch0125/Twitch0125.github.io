@@ -32,10 +32,10 @@ Worked on several Localization SaaS apps. I was mainly working on the Frontend a
 - TailwindCSS
 
 ## Education
-Mountainland Technical College
+Mountainland Technical College <br>
 Lehi, UT · Jan 2019 - Dec 2019
 Certificate in Web Programming & Development
 
-Learnui.design
+Learnui.design <br>
 Jan 2022 - Current
 UI Design course
