@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     renderJsonPayloads: true,
   },
   vite: {
-    esbuild: {
+    build: {
       target: 'esnext',
     },
   },
