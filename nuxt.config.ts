@@ -16,6 +16,11 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
+    routeRules: {
+      '*': {
+        experimentalNoScripts: true,
+      },
+    },
     compressPublicAssets: {
       brotli: true,
       gzip: true,
