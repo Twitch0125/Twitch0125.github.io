@@ -10,11 +10,6 @@ export default defineNuxtConfig({
   experimental: {
     renderJsonPayloads: true,
   },
-  routeRules: {
-    '*': {
-      experimentalNoScripts: true,
-    },
-  },
   vite: {
     esbuild: {
       target: 'esnext',

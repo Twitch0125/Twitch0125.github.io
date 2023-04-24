@@ -29,8 +29,8 @@ export default defineConfig({
   ],
   theme: {
     fontFamily: {
-      body: 'EpilogueVariable',
-      display: 'EpilogueVariable',
+      body: 'EpilogueVariable, sans-serif',
+      display: 'EpilogueVariable, sans-serif',
     },
     boxShadow: {
       DEFAULT: '4px 4px 0px hsl(235 52% 15%)',

@@ -9,7 +9,6 @@ const blogs = await queryContent('/blog').find()
     </h1>
     <article v-for="blog in blogs" :key="blog._id" class="">
       <div class="bg-white">
-        <!-- <img :src="blog." alt=""> -->
         <h2 class="text-xl font-semibold">
           <nuxt-link :to="blog._path">
             {{ blog.title }}
