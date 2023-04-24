@@ -12,9 +12,9 @@
       </div>
       <div class="sm:flex-grow" />
       <div class="flex text-xl gap-2">
-        <a href="https://github.com/Twitch0125" class="i-tabler-brand-github" />
-        <a href="https://twitter.com/ErcanbrackKaleb" class="i-tabler-brand-twitter" />
-        <a href="https://www.linkedin.com/in/kaleb-e/" class="i-tabler-brand-linkedin" />
+        <a title="github" href="https://github.com/Twitch0125" class="w-6 h-6 i-tabler-brand-github" />
+        <a title="twitter" href="https://twitter.com/ErcanbrackKaleb" class="w-6 h-6 i-tabler-brand-twitter" />
+        <a title="linkedin" href="https://www.linkedin.com/in/kaleb-e/" class="w-6 h-6 i-tabler-brand-linkedin" />
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <Html lang="en" class="font-body text-body flow-xs sm:flow-base -z-2" />
   <div
-    class="sm:(grid grid-cols-[1fr_2fr_1fr])"
+    class="sm:(grid grid-cols-[1fr_2fr_1fr]) overflow-hidden"
   >
     <div id="app-base" class="z-0 bg-white relative flex flex-col gap-flow pt-7 col-start-2 px-4 sm:px-6 min-h-screen border-base">
       <HeroText />
@@ -10,7 +10,6 @@
       <main>
         <NuxtPage />
       </main>
-      <NuxtImg alt="" class="absolute -z-1 top-0 opacity-33" format="webp" src="/images/texture.png" />
     </div>
   </div>
 </template>

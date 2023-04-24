@@ -1,4 +1,4 @@
-# Professional Experience
+## Professional Experience
 
 ### Software Engineer Straker Lingotek <br> [Lehi, UT (Remote) · October 2019 - Current]{.date}
 
