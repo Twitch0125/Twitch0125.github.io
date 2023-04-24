@@ -6,11 +6,11 @@
     >
       Kaleb Ercanbrack
     </NuxtLink>
-    <div class="decoration-none font-display text-sm font-900 tracking-[0.13em] italic uppercase flex">
-      <div class="flex">
+    <div class="decoration-none font-display text-sm font-900 tracking-[0.13em] italic uppercase flex flex-col sm:flex-row">
+      <div>
         UI Designer / Software Engineer / <span class="not-italic text-base">☕️</span>
       </div>
-      <div class="flex-grow" />
+      <div class="sm:flex-grow" />
       <div class="flex text-xl gap-2">
         <a href="https://github.com/Twitch0125" class="i-tabler-brand-github" />
         <a href="https://twitter.com/ErcanbrackKaleb" class="i-tabler-brand-twitter" />
