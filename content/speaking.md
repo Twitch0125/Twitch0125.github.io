@@ -1,6 +1,6 @@
 # Speaking
 
-## Utah JS: Js on The Edge
+## Utah Node.JS: Js on The Edge
 
 My first ever presentation! I talked about "the edge", which is basically serverless with instant function start times. I was the 2nd presenter and I highly recommend watching the first one. 
 

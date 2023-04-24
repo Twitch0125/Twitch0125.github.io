@@ -4,7 +4,10 @@ const blogs = await queryContent('/blog').find()
 
 <template>
   <section class="flow-base grid gap-flow vertical-flow-deep">
-    <h1 class="text-4xl font-semibold mt-flow">
+    <p class="blurb">
+      Read my rants, linux nerdisms, and other stuff.
+    </p>
+    <h1 class="text-3xl font-semibold">
       Posts
     </h1>
     <article v-for="blog in blogs" :key="blog._id" class="">
