@@ -11,15 +11,12 @@
         UI Designer / Software Engineer / <span class="not-italic text-base">☕️</span>
       </div>
       <div class="sm:flex-grow" />
-      <div class="flex text-xl gap-3 sm:gap-2">
-        <a title="github" href="https://github.com/Twitch0125" class="w-6 h-6 i-tabler-brand-github" />
-        <a title="twitter" href="https://twitter.com/ErcanbrackKaleb" class="w-6 h-6 i-tabler-brand-twitter" />
-        <a title="linkedin" href="https://www.linkedin.com/in/kaleb-e/" class="w-6 h-6 i-tabler-brand-linkedin" />
+      <div class="flex text-xl gap-3 sm:gap-2 [&>a]:(h-6 w-6)">
+        <a title="email kaleb" href="mailto:kaleb.ercanbrack@hey.com" class="i-tabler-mail" />
+        <a title="github" href="https://github.com/Twitch0125" class="i-tabler-brand-github" />
+        <a title="twitter" href="https://twitter.com/ErcanbrackKaleb" class="i-tabler-brand-twitter" />
+        <a title="linkedin" href="https://www.linkedin.com/in/kaleb-e/" class="i-tabler-brand-linkedin" />
       </div>
     </div>
   </div>
 </template>
-
-<style>
-
-</style>
