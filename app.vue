@@ -3,7 +3,7 @@
   <div
     class="sm:(grid grid-cols-[1fr_2fr_1fr]) overflow-hidden"
   >
-    <div id="app-base" class="z-0 bg-white relative flex flex-col gap-flow pt-7 col-start-2 px-4 sm:px-6 min-h-screen border-base">
+    <div id="app-base" class="z-0 bg-white relative flex flex-col gap-flow pt-7 col-start-2 px-6 sm:px-10 min-h-screen border-base">
       <HeroText />
       <MainNav />
       <Divider />

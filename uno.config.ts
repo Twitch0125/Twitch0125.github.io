@@ -11,8 +11,6 @@ const colors = {
 export default defineConfig({
   // ...UnoCSS options
   presets: [presetWind(), presetIcons(), presetTypography({
-    cssExtend: {
-    },
   })],
   transformers: [transformerVariantGroup()],
   rules: [
@@ -27,6 +25,7 @@ export default defineConfig({
           -1px 0 ${colors.body}`,
     }],
   ],
+  safelist: ['i-logos-javascript', 'i-logos-vue', 'i-logos-nuxt-icon', 'i-logos-unocss', 'i-logos-linux-tux', 'i-logos-docker-icon', 'i-logos-figma', 'i-logos-tailwindcss-icon'],
   theme: {
     fontFamily: {
       body: 'EpilogueVariable, sans-serif',

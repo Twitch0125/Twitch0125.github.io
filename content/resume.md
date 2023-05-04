@@ -21,23 +21,62 @@ and UX design, but occasionally some Backend work with Node and PHP.
 
 ## Skills
 
-- Javascript
-- UI/UX Design
-- CSS
-- HTML
+### :floating-icon{.i-logos-javascript} JavaScript
+JavaScript will always have a special place in my heart ❤️.
+
+Typescript however... well, it has a nice personality.
+### UI/UX Design
+I'm a UX Nerd. I find coding a good UX that people actually enjoy using while also solving business problems to be profoundly satisfying.
+
+I first started learning UI (and later UX design) from Erik D Kennedy's [Learn UI Design](https://www.learnui.design/) course.
+## Libraries
+
+### :floating-icon{.i-logos-vue} Vue
+
+The most underrated JS framework. I'm not saying its the _best_, but it works
+the best with my mental model.
+
+### :floating-icon{.i-logos-nuxt-icon} Nuxt
+
+Nuxt is also underrated. By far the best DX I've seen in a meta framework. The
+team behind Nuxt have done a ton of work with Nuxt 3 to also improve the JS
+ecosystem by creating a collection of universal js tools called
+[unjs](https://unjs.io/). [Nitro](https://nitro.unjs.io/) is especially cool.
+
+### :floating-icon{.i-logos-tailwindcss-icon} Tailwind CSS
+
+I've gotta mention Tailwind in today's job market, but I actually use
+[UnoCSS](https://unocss.dev). UnoCSS is an engine you could use to make
+TailwindCSS. I like it because its easy to integrate into anything, it's
+**blazingly** fast, and its super easy to configure.
 
 ## Tools
 
-- Linux
-- Docker
-- Figma
+### :floating-icon{.i-logos-linux-tux} Linux
 
-## Libraries
+I've been using Linux for longer than I knew how to program. Being familiar and
+knowing how distros work has been a huge time saver at times. I also appreciate
+the freedom of the OS and community.
 
-- Vue
-- Nuxt
-- SCSS
-- TailwindCSS
+I use Fedora BTW.
+
+### :floating-icon{.i-logos-docker-icon} Docker
+
+Docker and Docker compose are awesome tools for running apps and dev
+environments. I actually prefer [Podman](https://podman.io) over docker since
+its rootless by default and plays will with Docker. Not so much with Docker
+Compose. But that's been less of an issue for me as I've gotten more experienced
+with containers.
+
+I wanna dive into Kubernetes (K8s) too. Podman can convert its pods into K8s
+yaml which sounds super useful for enterprise dev environments.
+
+### :floating-icon{.i-logos-figma} Figma
+
+My preferred design tool! Since Figma is browser based I can use it on Linux
+which is a huge benefit.
+
+I've also started using [excalidraw](https://excalidraw.com) for extra lo-fi mockups.
 
 ## Education
 

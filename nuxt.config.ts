@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   nitro: {
     routeRules: {
       '*': {
-        experimentalNoScripts: true,
+        experimentalNoScripts: process.env.NODE_ENV === 'production',
       },
     },
     compressPublicAssets: {

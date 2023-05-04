@@ -7,7 +7,7 @@ const mailtoUrl = computed(() => `mailto:kaleb.ercanbrack@hey.com?subject=Someth
 </script>
 
 <template>
-  <ContentDoc tag="article" class="prose">
+  <ContentDoc tag="article" class="prose max-w-80ch">
     <template #not-found>
       <p class="blurb" style="font-family: monospace">
         Aw nuts! Something wasn't found or went wrong. <a

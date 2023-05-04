@@ -5,7 +5,7 @@ const blogs = await queryContent('/blog').find()
 <template>
   <section class="flow-base grid gap-flow vertical-flow-deep">
     <p class="blurb">
-      Read my rants, linux nerdisms, and other stuff.
+      Read my rants, nerdisms, and other stuff.
     </p>
     <h1 class="text-3xl font-semibold">
       Posts

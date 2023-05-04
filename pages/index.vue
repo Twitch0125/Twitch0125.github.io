@@ -8,6 +8,6 @@
     <Profile class="mx-auto" />
     <a class="btn btn-primary mr-1 sm:mr-0" href="mailto:kaleb.ercanbrack@hey.com"> Email Me </a>
     <Divider />
-    <ContentDoc tag="main" path="/resume" class="prose -mt-5" />
+    <ContentDoc tag="main" path="/resume" class="prose max-w-80ch -mt-5" />
   </div>
 </template>
