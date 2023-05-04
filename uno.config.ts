@@ -75,7 +75,7 @@ export default defineConfig({
       'flow-base': '[--flow-space:1rem]',
       'flow-lg': '[--flow-space:1.125rem]',
       'flow-xl': '[--flow-space:1.25rem]',
-      'divider': 'h-1px bg-body -mx-4 sm:-mx-6',
+      'divider': 'h-1px bg-body -mx-6 sm:-mx-10',
       'date': 'text-body/70 text-sm font-mono',
     },
     [
