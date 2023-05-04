@@ -3,7 +3,7 @@
 ### Software Engineer Straker Lingotek <br> [Lehi, UT (Remote) · October 2019 - Current]{.date}
 
 Worked on several Localization SaaS apps. I was mainly working on the Frontend
-and UX design, but occasionally some Backend work with Node and PHP.
+and UX design, but occasionally some Backend work with Node and a little PHP.
 
 - Worked on a suite of SaaS apps using Vue, Nuxt, and Vuetify.
 - Worked with system architect to convert hundreds of JSP templates into Vue
