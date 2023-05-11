@@ -1,6 +1,6 @@
 ## Professional Experience
 
-### Software Engineer Straker Lingotek <br> [Lehi, UT (Remote) · October 2019 - Current]{.date}
+### Software Engineer | Straker Lingotek <br> [Lehi, UT (Remote) · October 2019 - Current]{.date}
 
 Worked on several Localization SaaS apps. I was mainly working on the Frontend
 and UX design, but occasionally some Backend work with Node and a little PHP.
@@ -21,29 +21,42 @@ and UX design, but occasionally some Backend work with Node and a little PHP.
 
 ## Skills
 
-### :floating-icon{.i-logos-javascript} JavaScript
+::floating-icon{icon="i-logos-javascript"}
+### JavaScript
+:: 
+
 JavaScript will always have a special place in my heart ❤️.
-
 Typescript however... well, it has a nice personality.
-### UI/UX Design
-I'm a UX Nerd. I find coding a good UX that people actually enjoy using while also solving business problems to be profoundly satisfying.
 
-I first started learning UI (and later UX design) from Erik D Kennedy's [Learn UI Design](https://www.learnui.design/) course.
+### UI/UX Design
+
+I'm a UX Nerd. I find coding a good UX that people actually enjoy using while
+also solving business problems to be profoundly satisfying.
+
+I first started learning UI (and later UX design) from Erik D Kennedy's
+[Learn UI Design](https://www.learnui.design/) course.
+
 ## Libraries
 
-### :floating-icon{.i-logos-vue} Vue
+::floating-icon{icon="i-logos-vue"}
+### Vue
+::
 
 The most underrated JS framework. I'm not saying its the _best_, but it works
 the best with my mental model.
 
-### :floating-icon{.i-logos-nuxt-icon} Nuxt
+::floating-icon{icon="i-logos-nuxt-icon"}
+### Nuxt
+::
 
 Nuxt is also underrated. By far the best DX I've seen in a meta framework. The
 team behind Nuxt have done a ton of work with Nuxt 3 to also improve the JS
 ecosystem by creating a collection of universal js tools called
 [unjs](https://unjs.io/). [Nitro](https://nitro.unjs.io/) is especially cool.
 
-### :floating-icon{.i-logos-tailwindcss-icon} Tailwind CSS
+::floating-icon{icon="i-logos-tailwindcss-icon"}
+### Tailwind CSS
+::
 
 I've gotta mention Tailwind in today's job market, but I actually use
 [UnoCSS](https://unocss.dev). UnoCSS is an engine you could use to make
@@ -52,7 +65,9 @@ TailwindCSS. I like it because its easy to integrate into anything, it's
 
 ## Tools
 
-### :floating-icon{.i-logos-linux-tux} Linux
+::floating-icon{icon="i-logos-linux-tux"}
+### Linux
+::
 
 I've been using Linux for longer than I knew how to program. Being familiar and
 knowing how distros work has been a huge time saver at times. I also appreciate
@@ -60,7 +75,9 @@ the freedom of the OS and community.
 
 I use Fedora BTW.
 
-### :floating-icon{.i-logos-docker-icon} Docker
+::floating-icon{icon="i-logos-docker-icon"}
+### Docker
+::
 
 Docker and Docker compose are awesome tools for running apps and dev
 environments. I actually prefer [Podman](https://podman.io) over docker since
@@ -71,12 +88,15 @@ with containers.
 I wanna dive into Kubernetes (K8s) too. Podman can convert its pods into K8s
 yaml which sounds super useful for enterprise dev environments.
 
-### :floating-icon{.i-logos-figma} Figma
+::floating-icon{icon="i-logos-figma"}
+### Figma
+::
 
 My preferred design tool! Since Figma is browser based I can use it on Linux
 which is a huge benefit.
 
-I've also started using [excalidraw](https://excalidraw.com) for extra lo-fi mockups.
+I've also started using [excalidraw](https://excalidraw.com) for extra lo-fi
+mockups.
 
 ## Education
 

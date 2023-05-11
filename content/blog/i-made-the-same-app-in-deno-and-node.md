@@ -2,6 +2,10 @@
 created: 05/04/23
 ---
 
+::date
+05/04/23
+::
+
 # I made the same app in Deno and Node
 
 Here's what I discovered and what I think
@@ -73,6 +77,9 @@ Deno.test(
   }
 );
 ```
+## Deno is super easy to get started with 
+no package.json, no npm packages, very little configuration.
+
 
 ## Deno still has some work to do with package management
 
@@ -81,7 +88,7 @@ Package management is probably the most frustrating part of Deno. I was using Fr
 I also wasn't able to get deno to cache all dependencies during the docker image build so some unlucky soul will have to wait a few seconds when first visiting the app for Deno to download the rest of the dependencies.
 
 ## Deno uses roughly twice as much memory as Node
-I deployed both apps to Fly.io and noticed that Deno, on average, was idiling at around 100MB of memory while the node app was at around 49MB. This is supposedly due to the typescript transpiler running in production. There doesn't seem to be a way to disable typescript in production, and I wasn't able to create a binary with `deno compile` because of a bug.
+I deployed both apps to Fly.io and noticed that Deno, on average, was idiling at around 100MB of memory while the node app was at around 49MB. This is supposedly due to the typescript transpiler running in production. There doesn't seem to be a way to disable typescript in production, and I wasn't able to create a binary with `deno compile` (which does remove the transpiler) because of a bug.
 
 
 ## Deno had the smaller docker image size
