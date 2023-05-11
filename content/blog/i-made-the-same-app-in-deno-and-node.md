@@ -7,8 +7,22 @@ created: 05/04/23
 ::
 
 # I made the same app in Deno and Node
+The app is for a little fantasy baseball Discord I'm in. We use a game called Out Of The Park Baseball to simulate and manage teams. Only one person actually runs the game (they're called the "comissioner") and they just stream the games. The game does have an official "online" mode but it requires everyone to have the game and its pretty clunky to set up. I noticed that the game can export a website in a `.tar.gz` file, so I decided to make something where the commissioner can upload the `.tar.gz` file and have the site be deployed somewhere.
 
-Here's what I discovered and what I think
+Here's an outline of how the app works:
+
+1. A server hosts static files and handles a `/upload` route
+  1. For example, if you visit "https://my-not-real-site.app/" you'll see the landing page of the site.
+2. the `/upload` route has a file input in a form to upload a .tar.gz file
+3. The server saves the .tar.gz file to a `uploads/` directory
+4. The server unzips and extracts the `.tar.gz` file's contents to some folder that the server is using to serve static files.
+5. the `/upload` route uses basic authentication.
+
+Currently the app is a Deno app running on a 512 MB instance on [fly.io](https://fly.io) for about $3/month. I suppose I could do a little more complicated deployment process and upload the extracted files to a CDN, or push them to a git repo thats connected to some static site provider. Maybe sometime in the future 😉
+
+The Deno version of the app is using [Fresh](https://fresh.deno.dev), so its server-side rendered and uses "Islands" with Preact.
+
+The Node version of the app is using [Nuxt](https://nuxt.com), so it is also server-side rendered but fully hyrdates the ui with Vue. I never got the Nuxt app fully working, for some reason the Images on the site weren't being sent correctly but I didn't look much into it.
 
 ## JSX as a templating language
 
@@ -27,6 +41,7 @@ I still hate all the weird `/// <reference />` comments though.
 ## Deno's std library is awesome
 
 Deno's std library is awesome! I found it fairly intuitive to use. I was annoyed by a lot of stackoverflow results being out of date since Deno seems to have frequently deprecated or moved around some functionality. But I didn't bring in any dependencies besides what Fresh had.
+I also appreciate that it uses the same APIs available in the browser.
 
 Here's how I saved an uploaded file in Deno and Node
 
@@ -78,7 +93,7 @@ Deno.test(
 );
 ```
 ## Deno is super easy to get started with 
-no package.json, no npm packages, very little configuration.
+no package.json, no npm packages, very little configuration. Just `deno run main.ts` and your app is running.
 
 
 ## Deno still has some work to do with package management
