@@ -1,4 +1,5 @@
 ---
+description: An app that handles a .tar.gz file, extracts it, and serves the files within, all for a Baseball Discord server. 
 created: 05/04/23
 ---
 
@@ -7,6 +8,7 @@ created: 05/04/23
 ::
 
 # I made the same app in Deno and Node
+
 The app is for a little fantasy baseball Discord I'm in. We use a game called Out Of The Park Baseball to simulate and manage teams. Only one person actually runs the game (they're called the "comissioner") and they just stream the games. The game does have an official "online" mode but it requires everyone to have the game and its pretty clunky to set up. I noticed that the game can export a website in a `.tar.gz` file, so I decided to make something where the commissioner can upload the `.tar.gz` file and have the site be deployed somewhere.
 
 Here's an outline of how the app works:
@@ -21,9 +23,10 @@ Here's an outline of how the app works:
 Currently the app is a Deno app running on a 512 MB instance on [fly.io](https://fly.io) for about $3/month. I suppose I could do a little more complicated deployment process and upload the extracted files to a CDN, or push them to a git repo thats connected to some static site provider. Maybe sometime in the future 😉
 
 The Deno version of the app is using [Fresh](https://fresh.deno.dev), so its server-side rendered and uses "Islands" with Preact.
+[Github](https://github.com/Twitch0125/naba-upload)
 
-The Node version of the app is using [Nuxt](https://nuxt.com), so it is also server-side rendered but fully hyrdates the ui with Vue. I never got the Nuxt app fully working, for some reason the Images on the site weren't being sent correctly but I didn't look much into it.
-
+The Node version of the app is using [Nuxt](https://nuxt.com), so it is also server-side rendered but fully hyrdates the ui with Vue. I couldn't get this to work quite right, for some reason the file extraction logic wouldn't work in the production build, while in the dev build the images weren't being sent correctly.
+[Github](https://github.com/Twitch0125/naba-upload-nuxt)
 ## JSX as a templating language
 
 I'm not a big fan of JSX, but Deno made it painless to use. Part of that is because of Fresh and it already handles some setup and configuration headaches. I actually started to enjoy using it though!
@@ -56,7 +59,7 @@ await copy(reader, writer);
 writer.close(); //While writing tests for Deno, it told me there was a leak here because I never closed writer. Cool!
 ```
 
-And for node I was using Nuxt 3, which uses H3.
+And for node.
 
 ```typescript
 const body = await readMultipartFormData(event); //util from H3 to parse formData
