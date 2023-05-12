@@ -33,6 +33,6 @@ Pin-Priority: 2000
 ```
 
 Pin-priority just has to be higher than Pop's pin-priority in
-`/etc/apt/preferences.d/pop-default-settings` in order to find what goes into
-`Pin: release o=[here]`, use `apt-cache policy` and find your PPA, and copy
-whatever it has in `o=` and paste in your preferences file
+`/etc/apt/preferences.d/pop-default-settings`.
+
+In order to find what goes into `Pin: release o=[here]`, use `apt-cache policy` and find your PPA, and copy whatever it has in `o=` and paste in your preferences file

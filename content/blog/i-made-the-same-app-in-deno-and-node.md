@@ -72,7 +72,7 @@ await mkdir(UPLOADS_PATH);
 await writeFile(`${UPLOADS_PATH}/report.tar.gz`, file.data);
 ```
 
-## Deno Testing is slick
+## Deno testing is slick
 
 Deno's test runner is pretty easy to use and it'll even tell you when it detects memory leaks!
 
@@ -115,3 +115,8 @@ I deployed both apps to Fly.io and noticed that Deno, on average, was idiling at
 ## Deno had the smaller docker image size
 Deno's image was about 120mb, while the node app was about 170mb
 
+
+# Closing thoughts
+Overall the Deno app was simpler to comprehend and write, besides learning how Preact works. It's a big bummer that it uses so much memory.
+
+The node app I over complicated by using Nuxt. I need to redo it with a stack similar to Fresh. I did learn a lot about streams in Node though. I'd never used streams before and it took a while for them to "click", though I'm sure I'm still missing some info on them.

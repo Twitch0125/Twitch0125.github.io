@@ -3,7 +3,7 @@ title: "Kaleb Ercanbrack's Resume"
 ---
 ## Professional Experience
 
-### Software Engineer | Straker Lingotek <br> [Lehi, UT (Remote) · October 2019 - Current]{.date}
+### Software Engineer | [Straker Lingotek](https://www.strakertranslations.com/) <br> [Lehi, UT (Remote) · October 2019 - Current]{.date}
 
 Worked on several Localization SaaS apps. I was mainly working on the Frontend
 and UX design, but occasionally some Backend work with Node and a little PHP.
@@ -29,7 +29,8 @@ and UX design, but occasionally some Backend work with Node and a little PHP.
 :: 
 
 JavaScript will always have a special place in my heart ❤️.
-Typescript however... well, it has a nice personality.
+
+Typescript however... well, it has a nice personality. If you want to know what I mean, I wrote about it [here](/blog/typescript)
 
 ### UI/UX Design
 
