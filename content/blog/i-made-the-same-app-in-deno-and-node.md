@@ -27,6 +27,8 @@ The Deno version of the app is using [Fresh](https://fresh.deno.dev), so its ser
 
 The Node version of the app is using [Nuxt](https://nuxt.com), so it is also server-side rendered but fully hyrdates the ui with Vue. I couldn't get this to work quite right, for some reason the file extraction logic wouldn't work in the production build, while in the dev build the images weren't being sent correctly.
 [Github](https://github.com/Twitch0125/naba-upload-nuxt)
+
+I think I'll do *another* version with either [Fastify](https://fastify.io) or [Adonisjs](https://adonisjs.com) with some templating engine and alpine-js. I could also try [Astro](https://astro.build), but I have a feeling all these frameworks that require "adapters" aren't gonna be worth the hassle...
 ## JSX as a templating language
 
 I'm not a big fan of JSX, but Deno made it painless to use. Part of that is because of Fresh and it already handles some setup and configuration headaches. I actually started to enjoy using it though!
@@ -56,8 +58,9 @@ await ensureDir(Deno.cwd() + "/uploads");
 const reader = readerFromStreamReader(file.stream().getReader());
 const writer = await Deno.create(to);
 await copy(reader, writer);
-writer.close(); //While writing tests for Deno, it told me there was a leak here because I never closed writer. Cool!
+writer.close(); //While writing tests for Deno, it told me there was a leak here because I never did writer.close(). Cool!
 ```
+This is longer than the node example, but the `req.formData()` is the same object you'd get from `new FormData()` in the browser so I already knew how to use it.
 
 And for node.
 
