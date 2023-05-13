@@ -7,7 +7,7 @@ useHead({
 <template>
   <Html lang="en" class="font-body text-body flow-xs sm:flow-base -z-2" />
   <Favicon />
-  <div hx-boost="true" class="sm:(grid grid-cols-[1fr_2fr_1fr]) overflow-hidden">
+  <div class="sm:(grid grid-cols-[1fr_2fr_1fr]) overflow-hidden">
     <div id="app-base" class="z-0 bg-white relative flex flex-col gap-flow pt-7 col-start-2 px-6 sm:px-10 min-h-screen border-base">
       <HeroText />
       <MainNav />
