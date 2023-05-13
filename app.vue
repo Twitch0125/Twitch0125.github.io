@@ -1,9 +1,5 @@
 <script setup>
 useHead({
-  script: [{
-    src: 'https://unpkg.com/htmx.org@1.9.2/dist/htmx.min.js',
-    defer: true,
-  }],
   title: 'Kaleb Ercanbrack',
 })
 </script>
