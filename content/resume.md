@@ -14,7 +14,7 @@ Worked on several Localization SaaS apps. I was mainly working on the Frontend
 and UX design, but occasionally some Backend work with Node and a little PHP.
 
 - Worked on a suite of SaaS apps using Vue, Nuxt, and Vuetify.
-- Worked with system architect to convert hundreds of JSP templates into Vue
+- Worked with system architect to automate conversion of hundreds of JSP templates into Vue
   components, allowing us to decouple our monolith to better align with our
   microservice architecture.
 - Rewrote and redesigned a Chrome Extension to use Manifest V3 and to be
