@@ -112,7 +112,7 @@ I also wasn't able to get deno to cache all dependencies during the docker image
 I deployed both apps to Fly.io and noticed that Deno, on average, was idiling at around 100MB of memory while the node app was at around 49MB. This is supposedly due to the typescript transpiler running in production. There doesn't seem to be a way to disable typescript in production, and I wasn't able to create a binary with `deno compile` (which does remove the transpiler) because of a bug.
 
 
-## Deno had the smaller docker image size
+## Deno has the smaller docker image size
 Deno's image was about 120mb, while the node app was about 170mb
 
 

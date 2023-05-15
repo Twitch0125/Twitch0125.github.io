@@ -13,13 +13,13 @@ title: "Kaleb Ercanbrack's Resume"
 Worked on several Localization SaaS apps. I was mainly working on the Frontend
 and UX design, but occasionally some Backend work with Node and a little PHP.
 
+- Mentored a distributed team of 4 on JS, CSS, and Vue.
 - Worked on a suite of SaaS apps using Vue, Nuxt, and Vuetify.
 - Worked with system architect to automate conversion of hundreds of JSP templates into Vue
   components, allowing us to decouple our monolith to better align with our
   microservice architecture.
 - Rewrote and redesigned a Chrome Extension to use Manifest V3 and to be
   included in our CI/CD pipeline.
-- Mentored a distributed team of 4 on JS, CSS, and Vue.
 - Optimized app bundling with Webpack to ship 50% less javascript on page load.
 - Implemented REST APIs in an a few Node microservices.
 - Managed our OAuth and Authentication process.
@@ -90,7 +90,7 @@ I use Fedora BTW.
 
 Docker and Docker compose are awesome tools for running apps and dev
 environments. I actually prefer [Podman](https://podman.io) over docker since
-its rootless by default and plays will with Docker. Not so much with Docker
+its rootless by default and plays well with Docker. Not so much with Docker
 Compose. But that's been less of an issue for me as I've gotten more experienced
 with containers.
 
