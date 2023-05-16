@@ -6,10 +6,6 @@ export default defineNuxtConfig({
     'assets/css/prose.css',
   ],
   modules: ['@nuxt/content', '@nuxt/image-edge', '@unocss/nuxt'],
-  content: {},
-  experimental: {
-    renderJsonPayloads: true,
-  },
   vite: {
     build: {
       target: 'esnext',
@@ -23,6 +19,13 @@ export default defineNuxtConfig({
     esbuild: {
       options: {
         target: 'esnext',
+      },
+    },
+  },
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        moduleResolution: 'bundler',
       },
     },
   },
