@@ -15,7 +15,9 @@ easier way to write JSDoc annotations.
 My issue is with the tooling.
 
 TSC takes up so much memory and can get really slow. I feel like I have to
-constantly reload the typescript lsp because typings don't update. Importing ESM
+constantly reload the typescript lsp because typings don't update or the LSP crashed.
+
+Importing ESM
 modules in typescript doesn't require an extension which is non-standard.
 
 For example:
