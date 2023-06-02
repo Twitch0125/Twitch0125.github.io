@@ -39,7 +39,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Generate static files
-        run: NUXT_PUBLIC_STUDIO_TOKENS=${{ vars.NUXT_PUBLIC_STUDIO_TOKENS }} pnpm run generate
+        run: pnpm run generate
+        env: 
+          NUXT_PUBLIC_STUDIO_TOKENS: ${{ vars.NUXT_PUBLIC_STUDIO_TOKENS }}
       - name: Upload Github Pages artifact
         uses: actions/upload-pages-artifact@v1.0.8
         with:
