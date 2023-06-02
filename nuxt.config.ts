@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: [
-    '@fontsource/epilogue/variable.css',
+    '@fontsource-variable/epilogue',
     '@unocss/reset/tailwind.css',
     'assets/css/prose.css',
   ],
