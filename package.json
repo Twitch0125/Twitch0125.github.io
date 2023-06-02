@@ -10,18 +10,19 @@
     "lint:js:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.38.6",
-    "@fontsource/epilogue": "^4.5.11",
-    "@iconify-json/logos": "^1.1.28",
-    "@iconify-json/tabler": "^1.1.74",
+    "@antfu/eslint-config": "^0.39.4",
+    "@fontsource/epilogue": "^5.0.2",
+    "@iconify-json/logos": "^1.1.31",
+    "@iconify-json/tabler": "^1.1.78",
     "@nuxt/content": "^2.6.0",
-    "@nuxt/image-edge": "1.0.0-28008586.381b906",
-    "@unocss/nuxt": "^0.51.12",
-    "@unocss/transformer-variant-group": "^0.51.12",
+    "@nuxt/image-edge": "1.0.0-28094923.e859bba",
+    "@nuxthq/studio": "^0.13.2",
+    "@unocss/nuxt": "^0.52.7",
+    "@unocss/transformer-variant-group": "^0.52.7",
     "autoprefixer": "^10.4.14",
     "consola": "^3.1.0",
-    "eslint": "^8.40.0",
-    "nuxt": "^3.5.0",
-    "typescript": "^5.0.4"
+    "eslint": "^8.41.0",
+    "nuxt": "^3.5.2",
+    "typescript": "^5.1.3"
   }
 }

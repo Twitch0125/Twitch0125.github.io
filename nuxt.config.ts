@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     '@unocss/reset/tailwind.css',
     'assets/css/prose.css',
   ],
-  modules: ['@nuxt/content', '@nuxt/image-edge', '@unocss/nuxt'],
+  modules: ['@nuxt/content', '@nuxt/image-edge', '@unocss/nuxt', '@nuxthq/studio'],
   vite: {
     build: {
       target: 'esnext',
