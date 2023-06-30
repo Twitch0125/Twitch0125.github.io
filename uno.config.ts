@@ -1,5 +1,5 @@
 // uno.config.ts
-import { defineConfig, presetIcons, presetTypography, presetWind } from 'unocss'
+import { defineConfig, presetIcons, presetTypography, presetWebFonts, presetWind } from 'unocss'
 import transformerVariantGroup from '@unocss/transformer-variant-group'
 
 const colors = {
@@ -10,7 +10,11 @@ const colors = {
 
 export default defineConfig({
   // ...UnoCSS options
-  presets: [presetWind(), presetIcons(), presetTypography({
+  presets: [presetWind(), presetIcons(), presetTypography({}), presetWebFonts({
+    provider: 'fontshare',
+    fonts: {
+      sans: 'Epilogue',
+    },
   })],
   transformers: [transformerVariantGroup()],
   rules: [
@@ -28,8 +32,8 @@ export default defineConfig({
   safelist: ['i-logos-javascript', 'i-logos-vue', 'i-logos-nuxt-icon', 'i-logos-unocss', 'i-logos-linux-tux', 'i-logos-docker-icon', 'i-logos-figma', 'i-logos-tailwindcss-icon'],
   theme: {
     fontFamily: {
-      body: 'EpilogueVariable, sans-serif',
-      display: 'EpilogueVariable, sans-serif',
+      body: 'Epilogue, sans-serif',
+      display: 'Epilogue, sans-serif',
     },
     boxShadow: {
       DEFAULT: '4px 4px 0px hsl(235 52% 15%)',
@@ -79,7 +83,7 @@ export default defineConfig({
       'date': 'text-body/70 text-sm font-mono',
     },
     [
-      /^flow-([0-9]*)$/, ([, space]) => `[--flow-space:${parseInt(space) * 0.25}rem]`,
+      /^flow-([0-9]*)$/, ([, space]) => `[--flow-space:${Number.parseInt(space) * 0.25}rem]`,
     ],
   ],
 })

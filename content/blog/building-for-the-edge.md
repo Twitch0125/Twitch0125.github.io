@@ -1,6 +1,8 @@
 ---
+title: The Edge is the wild west of JavaScript
 description: I reckon there are some interesting things going on with the edge, partner.
 created: 06/28/23
+status: draft
 ---
 ::date
 06/28/23
@@ -32,4 +34,6 @@ It goes without sayin' that if you pay them money you'll be on the higher end of
 
 # Settin' out west
 
-tbd
+I've noticed a few common paths people take to write code for these environments.
+
+## Write in Node then convert it.
