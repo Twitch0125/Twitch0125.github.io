@@ -18,7 +18,7 @@ We've got the increasingly powerful Cloudflare Gang and their massive group of W
 
 Then there's the plucky fellas at Deno who say "Node.js messed up". They've got genuine tech. Changes the way you write your JavaScript, or TypeScript to be more precise. Though I can't but feel they've entwined themselves in being "pure", and are in the midst of a bonafide identity crisis.
 
-Any self-respectin' code slinger best take a gander at the smaller up-n-comers like Lagon. It's all Open Source, unlike the surly lot mentioned before (though the Cloudflare Gang has graciously released their Worker environment, just don't be thinkin' that they're gonna be accepting yer pull requests over theirs). A self hosted Edge Runtime, developed by a community of honest hard working souls, sounds mighty pleasing to me. Reminds me of my dear old Vue, bless their heart.
+Any self-respectin' code slinger best take a gander at the smaller up-n-comers like [Lagon](https://github.com/lagonapp/lagon). Another Edge Runtime written in Rust, using V8, and is fully open source.
 
 # It's a different world
 
@@ -36,4 +36,18 @@ It goes without sayin' that if you pay them money you'll be on the higher end of
 
 I've noticed a few common paths people take to write code for these environments.
 
-## Write in Node then convert it.
+**Write in Node then built it with an Adapter**
+- Node APIs are polyfilled or mocked, but you get access to some of the npm ecosystem
+- Bigger output
+- Harder to integrate with platform features
+
+My favorite example for this is [Nitro](https://nitro.unjs.io/).
+
+It provides some utilities that make it easier to develop for Edge runtimes. For example, its storage layer makes it easy to use an in-memory Key Value store in development and use Cloudflare KV in production.
+
+It uses [Unenv](https://unenv.unjs.io/)
+
+**Use only libraries that support these runtimes**
+- Lose out on some of the NPM ecosystem
+- Smaller output
+- Easier to integrate with platform features
