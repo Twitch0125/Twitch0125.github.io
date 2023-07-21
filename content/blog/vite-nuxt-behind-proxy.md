@@ -1,16 +1,16 @@
 ---
 title: How to run Vite (and Nuxt) behind HAProxy
-created: 07/02/23
-status: draft
+created: 07/21/23
+status: published
 ---
 ::date
-07/02/2023
+07/21/2023
 ::
 
 # How to run Vite (and Nuxt) behind HAProxy
 
 
-haproxy.cfg
+## haproxy.cfg
 ```
 global
     daemon
@@ -41,13 +41,13 @@ backend my_backend
 
 ```
 
-nuxt config
+## nuxt.config.ts
 
+https://nuxt.com/docs/api/configuration/nuxt-config
 ```typescript
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  vite: {
+  vite: { //the vite options here are the same in a vite.config.ts file
     server: {
       hmr: {
         port: 3001,
@@ -57,7 +57,7 @@ export default defineNuxtConfig({
   },
 });
 ```
-docker-compose.yml
+## docker-compose.yml
 ```
 services:
   haproxy:
