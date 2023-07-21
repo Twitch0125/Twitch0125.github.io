@@ -1,11 +1,11 @@
 ---
 title: The Edge is the wild west of JavaScript
 description: I reckon there are some interesting things going on with the edge, partner.
-created: 06/28/23
+created: 07/21/23
 status: published
 ---
 ::date
-06/28/23
+07/21/23
 ::
 
 # The Edge is the wild west of JavaScript
