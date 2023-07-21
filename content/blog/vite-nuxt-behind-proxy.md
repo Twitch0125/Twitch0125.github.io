@@ -2,6 +2,7 @@
 title: How to run Vite (and Nuxt) behind HAProxy
 created: 07/21/23
 status: published
+description: This is more so I don't forget, but it might help other people
 ---
 ::date
 07/21/2023
