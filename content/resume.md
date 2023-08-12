@@ -10,8 +10,7 @@ title: "Kaleb Ercanbrack's Resume"
   :::
 ::
 
-Worked on several Localization SaaS apps. I was mainly working on the Frontend
-and UX design, but occasionally some Backend work with Node and a little PHP.
+Worked on several Localization SaaS apps. I was mainly working on the Frontend and UX design, but often some backend work with Node.
 
 - Mentored a distributed team of 4 on JS, CSS, and Vue.
 - Worked on a suite of SaaS apps using Vue, Nuxt, and Vuetify.
@@ -22,7 +21,7 @@ and UX design, but occasionally some Backend work with Node and a little PHP.
   included in our CI/CD pipeline.
 - Optimized app bundling with Webpack to ship 50% less javascript on page load.
 - Implemented REST APIs in an a few Node microservices.
-- Managed our OAuth and Authentication process.
+- Owned our OAuth and Authentication process.
 - Rewrote several apps from AngularJS to Vue.
 - Overhauled the UX of several apps.
 - Defined and implemented a design system.
