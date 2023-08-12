@@ -1,10 +1,11 @@
 # Speaking
 
-## Utah Node.js: Node vs Deno DX
+## Utah Stack.js: Node vs Deno DX
+<small>(Utah Stack.js was formerly known as Utah Node.JS)</small>
 
 I talked about my experience writing an app that need to render some html, handle a file upload of a .tar.gz archive, save that archive, extract and decompress, and then serve the files within. 
 
-While working on this I discovered that I'm liking Deno more and more.
+While working on this I discovered that I'm liking Deno more and more. Even if it has some really weird quirks.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cGpsc1Wygzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
