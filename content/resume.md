@@ -3,7 +3,7 @@ title: "Kaleb Ercanbrack's Resume"
 ---
 ## Professional Experience
 
-### Software Engineer | [Straker Lingotek](https://www.strakertranslations.com/)
+### Software Engineer | [Straker](https://www.strakertranslations.com/)
 ::subheading
   :::date
     Lehi, UT (Remote) · October 2019 - Current
