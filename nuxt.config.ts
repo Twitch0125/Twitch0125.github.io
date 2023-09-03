@@ -2,8 +2,12 @@
 export default defineNuxtConfig({
   css: [
     '@unocss/reset/tailwind.css',
+    'assets/css/styles.css',
     'assets/css/prose.css',
   ],
+  devtools: {
+    enabled: true,
+  },
   modules: ['@nuxt/content', '@nuxt/image-edge', '@unocss/nuxt', '@nuxthq/studio'],
   vite: {
     build: {
@@ -11,20 +15,9 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    compressPublicAssets: {
-      brotli: true,
-      gzip: true,
-    },
     esbuild: {
       options: {
         target: 'esnext',
-      },
-    },
-  },
-  typescript: {
-    tsConfig: {
-      compilerOptions: {
-        moduleResolution: 'bundler',
       },
     },
   },

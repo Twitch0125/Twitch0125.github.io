@@ -11,16 +11,16 @@ const blogs = await queryContent('/blog').where({
 </script>
 
 <template>
-  <section class="flow-base grid gap-flow vertical-flow-deep">
+  <section class="grid gap-sm [&_*~*]:mt-xs">
     <p class="blurb">
       Read my rants, nerdisms, and other stuff.
     </p>
-    <h1 class="text-3xl font-semibold">
+    <h1 class="text-xl font-semibold">
       Posts
     </h1>
     <article v-for="blog in blogs" :key="blog._id" class="">
       <div class="bg-white">
-        <h2 class="text-xl font-semibold">
+        <h2 class="text-lg font-semibold">
           <nuxt-link :to="blog._path">
             {{ blog.title }}
           </nuxt-link>

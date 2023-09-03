@@ -10,7 +10,7 @@
     />
     <div class="w-[140px] h-[140px] border-base bg-white absolute top-[6px] left-[11px] z-1" />
     <div class="w-[140px] h-[140px] border-base bg-white absolute top-[12px] left-[22px] z-0" />
-    <div class="text-lg bg-primary tracking-tighter leading-tight absolute bottom-0 -right-5 z-3 font-bold border-base p-1 -rotate-20">
+    <div class="text-md bg-primary tracking-tighter leading-tight absolute bottom-0 -right-5 z-3 font-bold border-base p-1 -rotate-20">
       That's me!
     </div>
   </div>
