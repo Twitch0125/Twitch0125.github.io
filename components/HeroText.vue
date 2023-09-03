@@ -6,11 +6,11 @@
     >
       Kaleb Ercanbrack
     </NuxtLink>
-    <div class="decoration-none font-display text-sm font-900 tracking-widest italic uppercase switcher justify-between">
-      <div class="basis-80%">
+    <div class="flex flex-wrap justify-between gap-xs">
+      <div class="tracking-widest text-sm font-900 italic uppercase font-display">
         UI Designer / Software Engineer / <span class="not-italic text-base">☕️</span>
       </div>
-      <div class="flex text-xl gap-2xs [&>a]:(h-6 w-6)">
+      <div class="flex text-xl gap-2xs [&>a]:(h-6 w-6 decoration-none)">
         <a title="email kaleb" href="mailto:kaleb.ercanbrack@hey.com" class="i-tabler-mail" />
         <a title="github" href="https://github.com/Twitch0125" class="i-tabler-brand-github" />
         <a title="twitter" href="https://twitter.com/ErcanbrackKaleb" class="i-tabler-brand-twitter" />
