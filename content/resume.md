@@ -4,7 +4,7 @@ title: Kaleb Ercanbrack's Resume
 
 ## Professional Experience
 
-### Software Engineer | [Arivo](https://www.strakertranslations.com/)
+### Software Engineer | [Arivo](https://arivo.com/)
 
 ::subheading
   :::date
