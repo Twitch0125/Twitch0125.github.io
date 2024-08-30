@@ -4,6 +4,7 @@ description: I reckon there are some interesting things going on with the edge, 
 created: 07/21/23
 status: published
 ---
+
 ::date
 07/21/23
 ::
@@ -22,9 +23,10 @@ Any self-respectin' code slinger best take a gander at the smaller up-n-comers l
 
 # It's a different world
 
-Out here you've got to adapt. There's not the pleasantries and luxury of the city here. You've gotta know your runtime-specific APIs, Web APIs, and which Node APIs are *actually implemented*. I reckon you've gotta use your bare, calloused hands to build new libraries. 
+Out here you've got to adapt. There's not the pleasantries and luxury of the city here. You've gotta know your runtime-specific APIs, Web APIs, and which Node APIs are _actually implemented_. I reckon you've gotta use your bare, calloused hands to build new libraries.
 
-This land will eat you up and spit you out. See, these hosted platforms have got some imposed limits. Things like: 
+This land will eat you up and spit you out. See, these hosted platforms have got some imposed limits. Things like:
+
 - Thou shalt not have any app greater than 1MB-10MB in size
 - Thou shalt not use more than 10ms-50ms of CPU time
 - Thou shalt not use more than 128mb-512mb of Memory
@@ -34,6 +36,7 @@ This land will eat you up and spit you out. See, these hosted platforms have got
 It goes without sayin' that if you pay them money you'll be on the higher end of the limits, but the limits have got me a-fearin' for flexibility.
 
 # Settin' out west
+
 ::date
 (I'm dropping the cowboy speak now)
 ::
@@ -41,6 +44,7 @@ It goes without sayin' that if you pay them money you'll be on the higher end of
 I've noticed a few common paths people take to write code for these environments.
 
 ## Write in Node then build it with an Adapter
+
 - Node APIs are polyfilled or mocked, but you get access to some of the npm ecosystem
 - Bigger app-size (mostly overhead from polyfilling)
 - Harder to integrate with platform features (Deno KV, Cloudflare D1, etc)
@@ -56,11 +60,12 @@ I think Nitro (and the unjs project in general) deserves more attention. Things 
 If your node framework doesn't provide some kind of abstraction for using platform features then making your own is a hassle. You need to have it working in a Node runtime and Deno/Cloudflare, so you'll need to do a lot of mocking or some other trickery.
 
 ## Use only libraries that support these runtimes
+
 - Lose out on a good chunk of the NPM ecosystem
 - Smaller output
 - Easier to integrate with platform features
 
-When your use case is satisfied by the existing libraries, I'd recommend doing this. You get smaller app sizes and simpler development. Finding compatibile packages for both Deno and Clouflare is a pain however. Deno probably has the **edge** here because it's got decent Node compatibility, a robust std lib, and an ecosystem on https://deno.land/x/
+When your use case is satisfied by the existing libraries, I'd recommend doing this. You get smaller app sizes and simpler development. Finding compatibile packages for both Deno and Clouflare is a pain however. Deno probably has the **edge** here because it's got decent Node compatibility, a robust std lib, and an ecosystem on <https://deno.land/x/>
 
 One popular and handy package I've used is [Hono](https://hono.dev/) which is a web framework similar to express but works in Node and edge runtimes.
 

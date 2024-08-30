@@ -4,15 +4,16 @@ created: 07/21/23
 status: published
 description: This is more so I don't forget, but it might help other people
 ---
+
 ::date
 07/21/2023
 ::
 
 # How to run Vite (and Nuxt) behind HAProxy
 
-
 ## haproxy.cfg
-```
+
+```text
 global
     daemon
     log 127.0.0.1 local0
@@ -39,12 +40,12 @@ backend my_ws_backend
 backend my_backend
     mode http
     server backend_server1 nuxt:3000
-
 ```
 
 ## nuxt.config.ts
 
-https://nuxt.com/docs/api/configuration/nuxt-config
+<https://nuxt.com/docs/api/configuration/nuxt-config>
+
 ```typescript
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -58,8 +59,10 @@ export default defineNuxtConfig({
   },
 });
 ```
+
 ## docker-compose.yml
-```
+
+```text
 services:
   haproxy:
     image: haproxy
@@ -80,4 +83,3 @@ services:
 volumes:
   node_modules:
 ```
-

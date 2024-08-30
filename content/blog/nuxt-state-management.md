@@ -8,7 +8,6 @@ status: draft
 
 # Nuxt Server-side State Management
 
-
 ## UseState and Plugins
 
 plugin/state.server.ts

@@ -1,12 +1,14 @@
 ---
-title: "Kaleb Ercanbrack's Resume"
+title: Kaleb Ercanbrack's Resume
 ---
+
 ## Professional Experience
 
 ### Software Engineer | [Straker](https://www.strakertranslations.com/)
+
 ::subheading
   :::date
-    Lehi, UT (Remote) · October 2019 - Current
+  Lehi, UT (Remote) · October 2019 - Current
   :::
 ::
 
@@ -30,7 +32,7 @@ Worked on several Localization SaaS apps. I was mainly working on the Frontend a
 
 ::floating-icon{icon="i-logos-javascript"}
 ### JavaScript
-:: 
+::
 
 JavaScript will always have a special place in my heart ❤️.
 
@@ -108,11 +110,11 @@ mockups.
 
 ## Education
 
-[Mountainland Technical College](https://mtec.edu/) <br> [Lehi, UT · Jan 2019 -
-Dec 2019]{.date}<br> Certificate in Web Programming & Development
+[Mountainland Technical College](https://mtec.edu/) :br [Lehi, UT · Jan 2019 -
+Dec 2019]{.date}\:br Certificate in Web Programming & Development
 
-[Learn UI Design](https://www.learnui.design/) <br> [Online · Jan 2022 -
-Current]{.date}<br> UI Design course (and tangentially, UX)
+[Learn UI Design](https://www.learnui.design/) :br [Online · Jan 2022 -
+Current]{.date}\:br UI Design course (and tangentially, UX)
 
-[Learn UX Design](https://www.learnui.design/)<br> [Online · Jan 2023 -
-Current]{.date}<br> UX Design course (and tangentially, UI)
+[Learn UX Design](https://www.learnui.design/)\:br [Online · Jan 2023 -
+Current]{.date}\:br UX Design course (and tangentially, UI)

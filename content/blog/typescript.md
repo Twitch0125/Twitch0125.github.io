@@ -1,11 +1,13 @@
 ---
-title: 'Typescript'
-description: 'My thoughts on Typescript.'
+title: Typescript
+description: My thoughts on Typescript.
 created: 05/12/23
 ---
-::date 
+
+::date
 05/12/23
 ::
+
 # Typescript
 
 I don't hate Typescript. I actually think the typing syntax is powerful and
@@ -21,11 +23,13 @@ Importing ESM
 modules in typescript doesn't require an extension which is non-standard.
 
 For example:
+
 ```ts
 import mod from './mod'
 ```
 
 instead of
+
 ```js
 import mod from './mod.js'
 ```
