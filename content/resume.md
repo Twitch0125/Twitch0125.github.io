@@ -4,11 +4,27 @@ title: Kaleb Ercanbrack's Resume
 
 ## Professional Experience
 
+### Software Engineer | [Arivo](https://www.strakertranslations.com/)
+
+::subheading
+  :::date
+  West Valley, UT (Hybrid) · September 2023 - Current
+  :::
+::
+
+Worked on Loan Management and Loan Origination systems.
+
+- Migrated our codebase from vue-cli + Jest to Vite + Vitest and Typescript
+- Lead an effort to modernize the codebase to use idiomatic Vue and Typescript
+- Supported \~10 engineers with using Vue/Typescript
+- Worked with UX Designers to implement a new design system with the Vuetify component library.
+- more to come!
+
 ### Software Engineer | [Straker](https://www.strakertranslations.com/)
 
 ::subheading
   :::date
-  Lehi, UT (Remote) · October 2019 - Current
+  Lehi, UT (Remote) · October 2019 - August 2023
   :::
 ::
 
