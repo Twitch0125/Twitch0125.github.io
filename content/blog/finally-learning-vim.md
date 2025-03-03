@@ -1,12 +1,9 @@
 ---
 title: I'm finally learning vim
 description: Actually Neovim, because Lua is kinda neat.
-created: 05/03/23
+created: 2023-05-03
 ---
-
-::date
-05/03/23
-::
+:date{:date=created}
 
 # I'm finally learning vim
 

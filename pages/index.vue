@@ -1,3 +1,6 @@
+<script setup lang="ts">
+const {data} = await useAsyncData(() => queryCollection('content').path('/resume').first());
+</script>
 <template>
   <div class="flex flex-col gap-sm">
     <p class="blurb">
@@ -6,6 +9,6 @@
     <Profile class="mx-auto" />
     <a class="btn btn-primary mr-1" href="mailto:kaleb.ercanbrack@hey.com"> Email Me </a>
     <Divider />
-    <ContentDoc tag="main" path="/resume" class="prose max-w-80ch -mt-5" />
+    <ContentRenderer v-if="data" :value="data" tag="main" class="prose max-w-80ch -mt-5" />
   </div>
 </template>

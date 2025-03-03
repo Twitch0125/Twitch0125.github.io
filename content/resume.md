@@ -126,11 +126,14 @@ mockups.
 
 ## Education
 
-[Mountainland Technical College](https://mtec.edu/) :br [Lehi, UT · Jan 2019 -
-Dec 2019]{.date}\:br Certificate in Web Programming & Development
+[Mountainland Technical College](https://mtec.edu/)\
+[Lehi, UT · Jan 2019 - Dec 2019]{.date}\
+Certificate in Web Programming & Development
 
-[Learn UI Design](https://www.learnui.design/) :br [Online · Jan 2022 -
-Current]{.date}\:br UI Design course (and tangentially, UX)
+[Learn UI Design](https://www.learnui.design/)\
+[Online · Jan 2022 - Current]{.date}\
+UI Design course
 
-[Learn UX Design](https://www.learnui.design/)\:br [Online · Jan 2023 -
-Current]{.date}\:br UX Design course (and tangentially, UI)
+[Learn UX Design](https://www.learnui.design/courses/learn-ux-design.html)\
+[Online · Jan 2023 - Current]{.date}\
+UX Design course

@@ -1,12 +1,10 @@
 ---
 title: Typescript
 description: My thoughts on Typescript.
-created: 05/12/23
+created: 2023-05-12
 ---
 
-::date
-05/12/23
-::
+:date{:date=created}
 
 # Typescript
 

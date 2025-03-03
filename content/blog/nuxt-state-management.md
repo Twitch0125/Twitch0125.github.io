@@ -1,10 +1,10 @@
 ---
 status: draft
+created: 2023-08-07
 ---
 
-::date
-08/07/23
-::
+:date{:date=created}
+
 
 # Nuxt Server-side State Management
 

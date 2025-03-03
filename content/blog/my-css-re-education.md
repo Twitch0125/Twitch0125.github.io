@@ -1,11 +1,9 @@
 ---
-created: 08/07/2023
+created: 2023-08-07
 status: draft
 ---
 
-::date
-08/07/2023
-::
+:date{:date=created}
 
 # My CSS Re-education
 

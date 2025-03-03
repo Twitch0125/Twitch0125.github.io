@@ -1,11 +1,10 @@
 ---
 description: An app that handles a .tar.gz file, extracts it, and serves the files within, all for a Baseball Discord server.
-created: 05/04/23
+created: 2023-05-04
 ---
 
-::date
-05/04/23
-::
+:date{:date=created}
+
 
 # I made the same app in Deno and Node
 

@@ -1,13 +1,10 @@
 <script setup>
-const blogs = await queryContent('/blog').where({
-  status: {
-    $not: 'draft',
-  },
+const {data: blogs} = await useAsyncData(() => queryCollection('content')
+.andWhere(query => {
+  return query.where('status', '!=', 'draft').where('path', 'LIKE', '/blog/%')
 })
-  .sort({
-    created: -1,
-  })
-  .find()
+.order('created', 'DESC')
+.all());
 </script>
 
 <template>
@@ -21,12 +18,12 @@ const blogs = await queryContent('/blog').where({
     <article v-for="blog in blogs" :key="blog._id" class="">
       <div class="bg-white">
         <h2 class="text-lg font-semibold">
-          <nuxt-link :to="blog._path">
+          <nuxt-link class="underline" :to="blog.path">
             {{ blog.title }}
           </nuxt-link>
         </h2>
         <span class="font-mono text-body/70 text-sm">
-          {{ blog.created }}
+          <Date :date="blog.created" />
         </span>
         <p>
           {{ blog.description }}

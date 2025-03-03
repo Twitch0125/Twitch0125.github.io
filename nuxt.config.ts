@@ -5,10 +5,17 @@ export default defineNuxtConfig({
     'assets/css/styles.css',
     'assets/css/prose.css',
   ],
+
   devtools: {
     enabled: true,
   },
-  modules: ['@nuxt/content', '@nuxt/image-edge', '@unocss/nuxt', '@nuxthq/studio'],
+
+  modules: ['@nuxt/content', '@nuxt/image', '@unocss/nuxt', '@nuxt/eslint'],
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio',
+    },
+  },
   vite: {
     build: {
       target: 'esnext',
@@ -21,4 +28,6 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  compatibilityDate: '2025-03-02',
 })
