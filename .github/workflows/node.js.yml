@@ -41,7 +41,7 @@ jobs:
       - name: Generate static files
         run: pnpm run generate
       - name: Upload Github Pages artifact
-        uses: actions/upload-pages-artifact@v1.0.8
+        uses: actions/upload-pages-artifact@v4
         with:
           path: .output/public
   deploy:
