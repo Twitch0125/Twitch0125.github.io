@@ -14,6 +14,11 @@ export default defineNuxtConfig({
   content: {
     preview: {
       api: 'https://api.nuxt.studio',
+      gitInfo: {
+        name: 'Twitch0125.github.io',
+        owner: 'Twitch0125',
+        url: 'https://github.com/Twitch0125/Twitch0125.github.io'
+      }
     },
   },
   vite: {
