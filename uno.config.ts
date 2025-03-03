@@ -1,5 +1,5 @@
 // uno.config.ts
-import { defineConfig, presetIcons, presetTypography, presetWebFonts, presetWind } from 'unocss'
+import { defineConfig, presetIcons, presetTypography, presetWebFonts, presetWind3, } from 'unocss'
 import transformerVariantGroup from '@unocss/transformer-variant-group'
 
 const colors = {
@@ -23,7 +23,7 @@ const colors = {
 
 export default defineConfig({
   // ...UnoCSS options
-  presets: [presetWind(), presetIcons(), presetTypography({}), presetWebFonts({
+  presets: [presetWind3(), presetIcons(), presetTypography({}), presetWebFonts({
     provider: 'fontshare',
     fonts: {
       sans: 'Epilogue',

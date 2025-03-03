@@ -51,6 +51,9 @@ importers:
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
+      unocss:
+        specifier: ^66.0.0
+        version: 66.0.0(@unocss/webpack@66.0.0(webpack@5.98.0(esbuild@0.25.0)))(postcss@8.5.3)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
 
 packages:
 

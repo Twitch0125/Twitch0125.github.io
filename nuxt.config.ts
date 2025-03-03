@@ -9,7 +9,6 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-
   modules: ['@nuxt/content', '@nuxt/image', '@unocss/nuxt', '@nuxt/eslint'],
   content: {
     preview: {
@@ -21,18 +20,5 @@ export default defineNuxtConfig({
       }
     },
   },
-  vite: {
-    build: {
-      target: 'esnext',
-    },
-  },
-  nitro: {
-    esbuild: {
-      options: {
-        target: 'esnext',
-      },
-    },
-  },
-
   compatibilityDate: '2025-03-02',
 })

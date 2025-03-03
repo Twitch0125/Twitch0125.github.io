@@ -4,12 +4,12 @@ title: Kaleb Ercanbrack's Resume
 
 ## Professional Experience
 
-### Software Engineer | [Arivo](https://arivo.com/)
+::ProseH3
+Software Engineer | [Arivo](https://arivo.com)
+::
 
-::subheading
-  :::date
-  West Valley, UT (Hybrid) · September 2023 - Current
-  :::
+::date{subheading}
+West Valley, UT (Hybrid) · September 2023 - Current
 ::
 
 Worked on Loan Management and Loan Origination systems.
@@ -20,12 +20,13 @@ Worked on Loan Management and Loan Origination systems.
 - Worked with UX Designers to implement a new design system with the Vuetify component library.
 - more to come!
 
-### Software Engineer | [Straker](https://www.strakertranslations.com/)
 
-::subheading
-  :::date
-  Lehi, UT (Remote) · October 2019 - August 2023
-  :::
+::ProseH3
+Software Engineer | [Straker](https://straker.ai)
+::
+
+::date{subheading}
+Lehi, UT (Remote) · October 2019 - August 2023
 ::
 
 Worked on several Localization SaaS apps. I was mainly working on the Frontend and UX design, but often some backend work with Node.
