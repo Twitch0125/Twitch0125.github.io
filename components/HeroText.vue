@@ -13,7 +13,7 @@
       <div class="flex text-xl gap-2xs [&>a]:(h-6 w-6 decoration-none)">
         <a title="email kaleb" href="mailto:kaleb.ercanbrack@hey.com" class="i-tabler-mail" />
         <a title="github" href="https://github.com/Twitch0125" class="i-tabler-brand-github" />
-        <a title="twitter" href="https://twitter.com/ErcanbrackKaleb" class="i-tabler-brand-twitter" />
+        <a title="x" href="https://x.com/ErcanbrackKaleb" class="i-tabler-brand-x" />
         <a title="linkedin" href="https://www.linkedin.com/in/kaleb-e/" class="i-tabler-brand-linkedin" />
       </div>
     </div>
