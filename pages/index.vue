@@ -4,7 +4,7 @@ const {data} = await useAsyncData(() => queryCollection('content').path('/resume
 <template>
   <div class="flex flex-col gap-sm">
     <p class="blurb">
-      I'm a frontend engineer with 4 years of experience and a <b class="font-bold">passion</b> for excellent UI/UX Design
+      I'm a frontend engineer with 6 years of experience and a <b class="font-bold">passion</b> for excellent UI/UX Design
     </p>
     <Profile class="mx-auto" />
     <a class="btn btn-primary mr-1" href="mailto:kaleb.ercanbrack@hey.com"> Email Me </a>
