@@ -14,11 +14,14 @@ West Valley, UT (Hybrid) · September 2023 - Current
 
 Worked on Loan Management and Loan Origination systems.
 
-- Migrated our codebase from vue-cli + Jest to Vite + Vitest and Typescript
+- Served as our resident Vue expert
+- Migrated our codebase from vue-cli + Jest to Vite + Vitest and Typescript then to Nuxt 3
 - Lead an effort to modernize the codebase to use idiomatic Vue and Typescript
 - Supported \~10 engineers with using Vue/Typescript
 - Worked with UX Designers to implement a new design system with the Vuetify component library.
-- more to come!
+- Maintained an internal library of Nuxt modules used by several apps.
+- Improved Arivo.com's Core Web Vitals from "Needs Improvement" to "Good"
+- Designed and built a new Payment Portal web app and native wrapper app.
 
 
 ::ProseH3
