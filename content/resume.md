@@ -12,7 +12,7 @@ Software Engineer | [Arivo](https://arivo.com)
 West Valley, UT (Hybrid) · September 2023 - Current
 ::
 
-Worked on Loan Management and Loan Origination systems.
+Worked on Auto Loan servicing and origination systems.
 
 - Served as our resident Vue expert
 - Migrated our codebase from vue-cli + Jest to Vite + Vitest and Typescript then to Nuxt 3
