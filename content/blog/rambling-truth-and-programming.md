@@ -1,10 +1,17 @@
+---
+title: Rambling about Truth and Programming
+description: A flow of consciousness from a weird mood I was in one morning.
+created: 2025-07-01
+---
+:date{:date=created}
+
 #  Truth And Programming
 
-The following is a flow of Consciousness I had one morning right after waking up.
+The following is a flow of Consciousness I had one morning right after waking up a few weeks ago.
 
 It might not make any sense and I don't want to edit it because frankly I don't know what I was talking about for some of it.
 
-But I had some neat eureka moments. May you have your own eureka moments or otherwise enjoy the ramblings of a madman. 
+But I had some neat revelations. Maybe you'll have some too, otherwise enjoy the ramblings of a madman. 
 
 **BEGIN RAMBLINGS**
 
