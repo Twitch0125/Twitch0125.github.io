@@ -10,23 +10,24 @@
     "lint:js:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.4.0",
+    "@antfu/eslint-config": "^4.16.2",
     "@iconify-json/logos": "^1.2.4",
-    "@iconify-json/tabler": "^1.2.16",
-    "@nuxt/content": "^3.2.2",
-    "@nuxt/devtools": "^2.1.1",
-    "@nuxt/image": "^1.9.0",
-    "@unocss/nuxt": "^66.0.0",
-    "@unocss/transformer-variant-group": "^66.0.0",
-    "autoprefixer": "^10.4.20",
-    "consola": "^3.4.0",
-    "eslint": "^9.21.0",
-    "nuxt": "^3.15.4",
-    "typescript": "^5.8.2",
-    "unocss": "^66.0.0"
+    "@iconify-json/tabler": "^1.2.19",
+    "@nuxt/content": "^3.6.3",
+    "@nuxt/devtools": "^2.6.2",
+    "@nuxt/image": "^1.10.0",
+    "@unocss/nuxt": "^66.3.3",
+    "@unocss/transformer-variant-group": "^66.3.3",
+    "autoprefixer": "^10.4.21",
+    "better-sqlite3": "^12.2.0",
+    "consola": "^3.4.2",
+    "eslint": "^9.30.1",
+    "nuxt": "^3.17.6",
+    "typescript": "^5.8.3",
+    "unocss": "^66.3.3"
   },
   "dependencies": {
-    "@nuxt/eslint": "^1.1.0"
+    "@nuxt/eslint": "^1.5.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
