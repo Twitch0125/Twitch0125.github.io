@@ -2,12 +2,17 @@
 export default defineNuxtConfig({
   css: [
     '@unocss/reset/tailwind.css',
-    'assets/css/styles.css',
-    'assets/css/prose.css',
+    '~/assets/css/styles.css',
+    '~/assets/css/prose.css',
   ],
 
   devtools: {
     enabled: true,
+  },
+  eslint:{
+    config:{
+      standalone: false
+    }
   },
   modules: ['@nuxt/content', '@nuxt/image', '@unocss/nuxt', '@nuxt/eslint'],
   content: {
@@ -20,5 +25,5 @@ export default defineNuxtConfig({
       }
     },
   },
-  compatibilityDate: '2025-03-02',
+  compatibilityDate: '2025-07-20',
 })
