@@ -1,14 +1,15 @@
 ---
 title: Kaleb Ercanbrack's Resume
+status: published
 ---
 
 ## Professional Experience
 
-::ProseH3
+::prose-h3
 Software Engineer | [Arivo](https://arivo.com)
 ::
 
-::date{subheading}
+::date{subheading=""}
 West Valley, UT (Hybrid) · September 2023 - Current
 ::
 
@@ -23,12 +24,11 @@ Worked on Auto Loan servicing and origination systems.
 - Improved Arivo.com's Core Web Vitals from "Needs Improvement" to "Good"
 - Designed and built a new Payment Portal web app and native wrapper app.
 
-
-::ProseH3
+::prose-h3
 Software Engineer | [Straker](https://straker.ai)
 ::
 
-::date{subheading}
+::date{subheading=""}
 Lehi, UT (Remote) · October 2019 - August 2023
 ::
 
@@ -51,12 +51,12 @@ Worked on several Localization SaaS apps. I was mainly working on the Frontend a
 ## Skills
 
 ::floating-icon{icon="i-logos-javascript"}
-### JavaScript
+### TypeScript / JavaScript
 ::
 
-JavaScript will always have a special place in my heart ❤️.
+JavaScript will always have a special place in my heart ❤. The ecosystem is a bit of a mess, but its a lovely mess.
 
-Typescript however... well, it has a nice personality. If you want to know what I mean, I wrote about it [here](/blog/typescript)
+TypeScript has an amazingly flexible type system. I've always thought of it as my favorite code documentation tool. I used to have some qualms with typescript, which I've written about [here](/blog/typescript)
 
 ### UI/UX Design
 
@@ -66,13 +66,15 @@ also solving business problems to be profoundly satisfying.
 I first started learning UI (and later UX design) from Erik D Kennedy's
 [Learn UI Design](https://www.learnui.design/) course.
 
+I also took part of Google's UX design course on Coursera, but never finished it since it was going into a lot of exercises and practices that didn't seem practical for my company at the time.
+
 ## Libraries
 
 ::floating-icon{icon="i-logos-vue"}
 ### Vue
 ::
 
-The most underrated JS framework. I'm not saying its the _best_, but it works
+The most underrated JS framework. I'm not saying its the *best*, but it works
 the best with my mental model.
 
 ::floating-icon{icon="i-logos-nuxt-icon"}
@@ -130,14 +132,26 @@ mockups.
 
 ## Education
 
-[Mountainland Technical College](https://mtec.edu/)\
-[Lehi, UT · Jan 2019 - Dec 2019]{.date}\
+::education-feature
+[Mountainland Technical College](https://mtec.edu/)
+
+[Lehi, UT · Jan 2019 - Dec 2019]{.date}
+
 Certificate in Web Programming & Development
+::
 
-[Learn UI Design](https://www.learnui.design/)\
-[Online · Jan 2022 - Current]{.date}\
+::education-feature
+[Learn UI Design](https://www.learnui.design/)
+
+[Online · Jan 2022 - Current]{.date}
+
 UI Design course
+::
 
-[Learn UX Design](https://www.learnui.design/courses/learn-ux-design.html)\
-[Online · Jan 2023 - Current]{.date}\
+::education-feature
+[Learn UX Design](https://www.learnui.design/courses/learn-ux-design.html)
+
+[Online · Jan 2023 - Current]{.date}
+
 UX Design course
+::

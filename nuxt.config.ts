@@ -9,21 +9,22 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-  eslint:{
-    config:{
-      standalone: false
-    }
-  },
-  modules: ['@nuxt/content', '@nuxt/image', '@unocss/nuxt', '@nuxt/eslint'],
-  content: {
-    preview: {
-      api: 'https://api.nuxt.studio',
-      gitInfo: {
-        name: 'Twitch0125.github.io',
-        owner: 'Twitch0125',
-        url: 'https://github.com/Twitch0125/Twitch0125.github.io'
-      }
+  eslint: {
+    config: {
+      standalone: false,
     },
   },
-  compatibilityDate: '2025-07-20',
+  modules: [
+    '@nuxt/content',
+    '@nuxt/image',
+    '@unocss/nuxt',
+    '@nuxt/eslint',
+    'nuxt-studio',
+  ],
+  content: {
+    experimental: {
+      sqliteConnector: 'native',
+    },
+  },
+  compatibilityDate: '2025-12-20',
 })

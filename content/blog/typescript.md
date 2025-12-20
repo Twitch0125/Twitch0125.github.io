@@ -1,10 +1,12 @@
 ---
 title: Typescript
-description: My thoughts on Typescript.
 created: 2023-05-12
+description: My thoughts on Typescript.
+status: published
 ---
 
-:date{:date=created}
+::date{:date="created"}
+::
 
 # Typescript
 
@@ -22,13 +24,13 @@ modules in typescript doesn't require an extension which is non-standard.
 
 For example:
 
-```ts
+```ts [main.ts]
 import mod from './mod'
 ```
 
 instead of
 
-```js
+```js [main.js]
 import mod from './mod.js'
 ```
 
