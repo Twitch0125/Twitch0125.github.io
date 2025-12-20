@@ -10,12 +10,12 @@
     "lint:js:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.19.0",
+    "@antfu/eslint-config": "^6.7.1",
     "@iconify-json/logos": "^1.2.10",
     "@iconify-json/tabler": "^1.2.24",
     "@nuxt/content": "^3.9.0",
-    "@nuxt/devtools": "^2.7.0",
-    "@nuxt/image": "^1.11.0",
+    "@nuxt/devtools": "^3.1.1",
+    "@nuxt/image": "^2.0.0",
     "@unocss/nuxt": "^66.5.10",
     "@unocss/transformer-variant-group": "^66.5.10",
     "autoprefixer": "^10.4.23",
