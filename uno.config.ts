@@ -1,6 +1,6 @@
-// uno.config.ts
-import { defineConfig, presetIcons, presetTypography, presetWebFonts, presetWind3, } from 'unocss'
 import transformerVariantGroup from '@unocss/transformer-variant-group'
+// uno.config.ts
+import { defineConfig, presetIcons, presetTypography, presetWebFonts, presetWind3 } from 'unocss'
 
 const colors = {
   primary: 'hsl(38 97% 55%)',

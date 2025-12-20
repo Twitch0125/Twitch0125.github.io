@@ -10,7 +10,7 @@ export default defineContentConfig({
         description: z.string(),
         title: z.string(),
         status: z.string().optional().default('published'),
-      })
+      }),
     }),
   },
 })

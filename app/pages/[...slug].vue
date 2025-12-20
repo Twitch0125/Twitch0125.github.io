@@ -14,8 +14,8 @@ const { data: page } = await useAsyncData(route.path, () => {
 <template>
   <ContentRenderer v-if="page" :value="page" tag="article" class="prose max-w-80ch" />
   <article v-else>
-      <p class="blurb" style="font-family: monospace">
-        Aw nuts! Something wasn't found or went wrong. Please, <a class="underline text-primary font-black" :href="mailtoUrl">Let me know.</a>
-      </p>
+    <p class="blurb" style="font-family: monospace">
+      Aw nuts! Something wasn't found or went wrong. Please, <a class="underline text-primary font-black" :href="mailtoUrl">Let me know.</a>
+    </p>
   </article>
 </template>

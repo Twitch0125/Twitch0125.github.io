@@ -32,7 +32,6 @@ frontend my_frontend
     default_backend my_backend
     use_backend my_ws_backend if is_websocket
 
-
 backend my_ws_backend
     server backend_ws nuxt:3001
 backend my_backend
@@ -47,7 +46,7 @@ backend my_backend
 ```typescript
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  vite: { //the vite options here are the same in a vite.config.ts file
+  vite: { // the vite options here are the same in a vite.config.ts file
     server: {
       hmr: {
         port: 3001,
@@ -55,12 +54,12 @@ export default defineNuxtConfig({
       },
     },
   },
-});
+})
 ```
 
 ## docker-compose.yml
 
-```text
+```yaml
 services:
   haproxy:
     image: haproxy

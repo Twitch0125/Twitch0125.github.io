@@ -1,10 +1,10 @@
 <script setup>
-const {data: blogs} = await useAsyncData(() => queryCollection('content')
-.andWhere(query => {
-  return query.where('status', '!=', 'draft').where('path', 'LIKE', '/blog/%')
-})
-.order('created', 'DESC')
-.all());
+const { data: blogs } = await useAsyncData(() => queryCollection('content')
+  .andWhere((query) => {
+    return query.where('status', '!=', 'draft').where('path', 'LIKE', '/blog/%')
+  })
+  .order('created', 'DESC')
+  .all())
 </script>
 
 <template>

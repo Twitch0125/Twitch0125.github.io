@@ -5,7 +5,6 @@ created: 2023-08-07
 
 :date{:date=created}
 
-
 # Nuxt Server-side State Management
 
 ## UseState and Plugins

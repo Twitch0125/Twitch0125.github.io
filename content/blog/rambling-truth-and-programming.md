@@ -11,10 +11,9 @@ The following is a flow of Consciousness I had one morning right after waking up
 
 It might not make any sense and I don't want to edit it because frankly I don't know what I was talking about for some of it.
 
-But I had some neat revelations. Maybe you'll have some too, otherwise enjoy the ramblings of a madman. 
+But I had some neat revelations. Maybe you'll have some too, otherwise enjoy the ramblings of a madman.
 
 **BEGIN RAMBLINGS**
-
 
 Every program will do a thing, that's a truth.
 Sometimes you don't know the truth, i.e you think you know the truth but when measured (i.e, the program is ran with perceivable outputs) it doesn't match your understanding of the truth. This is called a bug. You then need to revisit your description of truth(grammar, language, programming language, code) to match your outcome.

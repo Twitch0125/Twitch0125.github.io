@@ -5,7 +5,6 @@ created: 2023-05-04
 
 :date{:date=created}
 
-
 # I made the same app in Deno and Node
 
 The app is for a little fantasy baseball Discord I'm in. We use a game called Out Of The Park Baseball to simulate and manage teams. Only one person actually runs the game (they're called the "comissioner") and they just stream the games. The game does have an official "online" mode but it requires everyone to have the game and its pretty clunky to set up. I noticed that the game can export a website in a `.tar.gz` file, so I decided to make something where the commissioner can upload the `.tar.gz` file and have the site be deployed somewhere.
@@ -51,14 +50,14 @@ I also appreciate that it uses the same APIs available in the browser.
 Here's how I saved an uploaded file in Deno and Node
 
 ```typescript
-//write to uploads/reports.tar.gz
-const form = await req.formData();
-const file = form.get("file") as File;
-await ensureDir(Deno.cwd() + "/uploads");
-const reader = readerFromStreamReader(file.stream().getReader());
-const writer = await Deno.create(to);
-await copy(reader, writer);
-writer.close(); //While writing tests for Deno, it told me there was a leak here because I never did writer.close(). Cool!
+// write to uploads/reports.tar.gz
+const form = await req.formData()
+const file = form.get('file') as File
+await ensureDir(`${Deno.cwd()}/uploads`)
+const reader = readerFromStreamReader(file.stream().getReader())
+const writer = await Deno.create(to)
+await copy(reader, writer)
+writer.close() // While writing tests for Deno, it told me there was a leak here because I never did writer.close(). Cool!
 ```
 
 This is longer than the node example, but the `req.formData()` is the same object you'd get from `new FormData()` in the browser so I already knew how to use it.
@@ -66,11 +65,11 @@ This is longer than the node example, but the `req.formData()` is the same objec
 And for node.
 
 ```typescript
-const body = await readMultipartFormData(event); //util from H3 to parse formData
-const file = body[0];
-await rm(UPLOADS_PATH, { recursive: true, force: true });
-await mkdir(UPLOADS_PATH);
-await writeFile(`${UPLOADS_PATH}/report.tar.gz`, file.data);
+const body = await readMultipartFormData(event) // util from H3 to parse formData
+const file = body[0]
+await rm(UPLOADS_PATH, { recursive: true, force: true })
+await mkdir(UPLOADS_PATH)
+await writeFile(`${UPLOADS_PATH}/report.tar.gz`, file.data)
 ```
 
 ## Deno testing is slick
@@ -79,25 +78,25 @@ Deno's test runner is pretty easy to use and it'll even tell you when it detects
 
 ```typescript
 Deno.test(
-  "POST route",
+  'POST route',
   { permissions: { read: true, write: true } },
   async (t) => {
-    t.name = "handle file save";
-    const url = Deno.cwd() + "/test/data/test-dir.tar.gz";
-    const res = await fileFetch(import.meta.resolve(url));
-    const file = new File([await res.arrayBuffer()], "test-dir.tar.gz");
-    const saveUrl = Deno.cwd() + "/test/data/test.tar.gz";
-    await saveTar(file, saveUrl);
-    await extractTar(saveUrl, Deno.cwd() + "/test/data/extracted");
-    assert(await exists(saveUrl));
-    await t.step("cleanup", async () => {
-      await Deno.remove(saveUrl);
-      await Deno.remove(Deno.cwd() + "/test/data/extracted", {
+    t.name = 'handle file save'
+    const url = `${Deno.cwd()}/test/data/test-dir.tar.gz`
+    const res = await fileFetch(import.meta.resolve(url))
+    const file = new File([await res.arrayBuffer()], 'test-dir.tar.gz')
+    const saveUrl = `${Deno.cwd()}/test/data/test.tar.gz`
+    await saveTar(file, saveUrl)
+    await extractTar(saveUrl, `${Deno.cwd()}/test/data/extracted`)
+    assert(await exists(saveUrl))
+    await t.step('cleanup', async () => {
+      await Deno.remove(saveUrl)
+      await Deno.remove(`${Deno.cwd()}/test/data/extracted`, {
         recursive: true,
-      });
-    });
+      })
+    })
   }
-);
+)
 ```
 
 ## Deno is super easy to get started with

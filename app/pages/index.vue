@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const {data} = await useAsyncData(() => queryCollection('content').path('/resume').first());
+const { data } = await useAsyncData(() => queryCollection('content').path('/resume').first())
 </script>
+
 <template>
   <div class="flex flex-col gap-sm">
     <p class="blurb">
