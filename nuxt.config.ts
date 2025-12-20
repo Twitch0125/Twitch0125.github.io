@@ -25,6 +25,13 @@ export default defineNuxtConfig({
     experimental: {
       sqliteConnector: 'native',
     },
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'everforest-dark',
+        },
+      },
+    },
   },
   compatibilityDate: '2025-12-20',
 })
