@@ -6,11 +6,13 @@ status: published
 ## Professional Experience
 
 ::prose-h3
-Software Engineer | [Arivo](https://arivo.com)
+Senior Software Engineer | [Arivo](https://arivo.com)
 ::
 
 ::date{subheading=""}
-West Valley, UT (Hybrid) · September 2023 - Current
+West Valley, UT (Hybrid) · November 2025 - Current
+
+Software Engineer from September 2023 - November 2025
 ::
 
 Worked on Auto Loan servicing and origination systems.
