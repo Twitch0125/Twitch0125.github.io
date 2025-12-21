@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-defineProps<{ test: string }>()
-</script>
-
 <template>
   <div class="my-6">
     <slot />

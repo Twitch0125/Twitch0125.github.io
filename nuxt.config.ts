@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '~/assets/css/styles.css',
     '~/assets/css/prose.css',
   ],
-
   devtools: {
     enabled: true,
   },
@@ -20,6 +19,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/eslint',
     'nuxt-studio',
+    '@nuxthub/core',
   ],
   content: {
     experimental: {
@@ -33,5 +33,40 @@ export default defineNuxtConfig({
       },
     },
   },
+  nitro: {
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
+    prerender: {
+      // Pre-render the homepage
+      routes: ['/'],
+      // Then crawl all the links on the page
+      crawlLinks: true,
+    },
+  },
+  studio: {
+    repository: {
+      provider: 'github', // 'github' or 'gitlab'
+      owner: 'twitch0125',
+      repo: 'Twitch0125.github.io',
+      branch: 'main',
+    },
+  },
   compatibilityDate: '2025-12-20',
+  $production: {
+    hub: {
+      db: {
+        dialect: 'sqlite',
+        driver: 'd1',
+        connection: {
+          databaseId: '2867af71-1dbd-46a8-9e5e-75d37b68baeb',
+        },
+      },
+    },
+    image: {
+      provider: 'ipxStatic',
+    },
+  },
 })
