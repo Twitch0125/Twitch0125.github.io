@@ -1,5 +1,5 @@
 <template>
-  <div class="profile w-[162px] h-[152px] relative">
+  <div class="w-[162px] h-[152px] relative">
     <NuxtImg
       format="webp"
       class="z-3 absolute top-0 left-0 w-[140px] h-[140px] border-base" src="/images/profile.jpg"

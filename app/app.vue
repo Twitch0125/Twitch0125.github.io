@@ -2,6 +2,7 @@
 useHead({
   title: 'Kaleb Ercanbrack',
 })
+defineOgImageComponent('Feature')
 </script>
 
 <template>

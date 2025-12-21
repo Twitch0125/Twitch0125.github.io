@@ -20,6 +20,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     'nuxt-studio',
     '@nuxthub/core',
+    '@nuxt/hints',
+    'nuxt-og-image',
   ],
   content: {
     experimental: {
@@ -45,6 +47,10 @@ export default defineNuxtConfig({
       // Then crawl all the links on the page
       crawlLinks: true,
     },
+  },
+  ogImage: {
+    zeroRuntime: true,
+    fonts: ['Epilogue:900'],
   },
   studio: {
     repository: {

@@ -4,7 +4,9 @@ import { defineConfig, presetIcons, presetTypography, presetWebFonts, presetWind
 
 const colors = {
   primary: 'hsl(38 97% 55%)',
+  primaryHex: '#fcaa1d',
   body: 'hsl(235 52% 15%)',
+  bodyHex: '#12163a',
   background: 'hsl(0 0% 100%)',
   orange: {
     50: '#fff9eb',
