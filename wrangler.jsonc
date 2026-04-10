@@ -2,17 +2,17 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "personal-site",
   "observability": {
-    "enabled": true,
+    "enabled": true
   },
   "routes": [
     {
       "pattern": "kaleberc.com",
       "zone_name": "kaleberc.com",
-      "custom_domain": true,
-    },
+      "custom_domain": true
+    }
   ],
   "vars": {
     "STUDIO_GITHUB_CLIENT_ID": "Ov23liqoeIhPSJrfMKKj",
-    "STUDIO_GITHUB_MODERATORS": "twitcherc@gmail.com",
-  },
+    "STUDIO_GITHUB_MODERATORS": "twitcherc@gmail.com"
+  }
 }

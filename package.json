@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.33.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -11,33 +11,33 @@
     "lint:js:fix": "eslint . --fix"
   },
   "dependencies": {
-    "drizzle-kit": "^0.31.8",
-    "drizzle-orm": "^0.45.1",
-    "vue": "^3.5.26"
+    "drizzle-kit": "^0.31.10",
+    "drizzle-orm": "^0.45.2",
+    "vue": "^3.5.32"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.7.3",
-    "@iconify-json/logos": "^1.2.10",
-    "@iconify-json/tabler": "^1.2.26",
-    "@nuxt/content": "^3.10.0",
-    "@nuxt/devtools": "^3.1.1",
-    "@nuxt/eslint": "^1.12.1",
+    "@antfu/eslint-config": "^8.1.1",
+    "@iconify-json/logos": "^1.2.11",
+    "@iconify-json/tabler": "^1.2.33",
+    "@nuxt/content": "^3.12.0",
+    "@nuxt/devtools": "^3.2.4",
+    "@nuxt/eslint": "^1.15.2",
     "@nuxt/hints": "1.0.0-alpha.4",
     "@nuxt/image": "^2.0.0",
-    "@nuxthub/core": "0.10.3",
-    "@unhead/vue": "^2.1.1",
-    "@unocss/nuxt": "^66.5.12",
-    "@unocss/transformer-variant-group": "^66.5.12",
-    "autoprefixer": "^10.4.23",
+    "@nuxthub/core": "0.10.7",
+    "@unhead/vue": "^2.1.13",
+    "@unocss/nuxt": "^66.6.8",
+    "@unocss/transformer-variant-group": "^66.6.8",
+    "autoprefixer": "^10.4.27",
     "consola": "^3.4.2",
-    "eslint": "^9.39.2",
-    "nuxt": "^4.2.2",
+    "eslint": "^10.2.0",
+    "nuxt": "^4.4.2",
     "nuxt-og-image": "5.1.13",
     "nuxt-studio": "1.0.0",
     "typescript": "^5.9.3",
-    "unocss": "^66.5.12",
-    "unstorage": "^1.17.3",
-    "wrangler": "^4.58.0"
+    "unocss": "^66.6.8",
+    "unstorage": "^1.17.5",
+    "wrangler": "^4.81.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
